@@ -1,11 +1,9 @@
 <!-- .block-slideshow -->
 <div class="block-slideshow block" [ngClass]="{'block-slideshow--layout--full': !withDepartments, 'block-slideshow--layout--with-departments': withDepartments}">
-    <div class="container ">
-        <div class="row p-5">
-            <!-- <div *ngIf="withDepartments" class="col-3 d-lg-block d-none" appDepartmentsArea></div> -->
-             <div class="col-12"
-            [ngClass]="{'col-lg-9': !withDepartments, 'col-lg-12':withDepartments}">
-
+    <div class="container">
+        <div class="row">
+            <div *ngIf="withDepartments" class="col-3 d-lg-block d-none" appDepartmentsArea></div>
+            <div class="col-12" [ngClass]="{'col-lg-12': !withDepartments, 'col-lg-9': withDepartments}">
                 <div class="block-slideshow__body">
                     <owl-carousel-o *ngIf="slides?.length" [options]="options" appOwlPreventClick>
                         <ng-template *ngFor="let slide of slides" carouselSlide>
