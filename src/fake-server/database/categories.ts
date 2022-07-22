@@ -154,9 +154,9 @@ const shopCategoriesDef: CategoryDef[] = [
                 ],
             },
             {
-                name: 'Measurement',
-                slug: 'measurement',
-                image: 'assets/images/categories/category-5.jpg',
+                name: 'Cleanliness',
+                slug: 'Cleanliness',
+                image: 'assets/images/categories/category-5.png',
                 items: 366,
                 children: [
                     {
@@ -187,9 +187,9 @@ const shopCategoriesDef: CategoryDef[] = [
                 ],
             },
             {
-                name: 'Clothes and PPE',
-                slug: 'clothes-and-ppe',
-                image: 'assets/images/categories/category-6.jpg',
+                name: 'Maintenance',
+                slug: 'Maintenance',
+                image: 'assets/images/categories/category-6.png',
                 items: 82,
                 children: [
                     {

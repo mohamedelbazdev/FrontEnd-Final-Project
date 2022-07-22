@@ -51,8 +51,8 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
             'Carpenters',
             'gardener',
             'plumbers',
-            'measurement',
-            'clothes-and-ppe',
+            'Cleanliness',
+            'Maintenance',
         ], 1);
         this.columnTopRated$ = this.shop.getTopRated(3);
         this.columnSpecialOffers$ = this.shop.getSpecialOffers(3);

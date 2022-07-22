@@ -95,7 +95,7 @@ export class ShopService {
         /**
          * This is what your API endpoint might look like:
          *
-         * https://example.com/api/shop/categories.json?slugs=electricity,measurement&depth=1
+         * https://example.com/api/shop/categories.json?slugs=electricity,Cleanliness&depth=1
          *
          * where:
          * - slugs = slugs.join(',')

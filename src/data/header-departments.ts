@@ -169,7 +169,7 @@ export const departments: NavigationLink[] = [
         ]
     }},
     {label: 'Power Machinery',        url: '/shop/catalog'},
-    {label: 'Measurement',            url: '/shop/catalog'},
+    {label: 'Cleanliness',            url: '/shop/catalog'},
     {label: 'Clothes & PPE',          url: '/shop/catalog'},
     {label: 'Plumbing',               url: '/shop/catalog'},
     {label: 'Storage & Organization', url: '/shop/catalog'},
