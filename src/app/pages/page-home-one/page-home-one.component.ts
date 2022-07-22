@@ -36,7 +36,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
 
     posts = posts;
 
-    featuredProducts!: ProductsCarouselData;
+    featuredProvider!: ProductsCarouselData;
     latestProducts!: ProductsCarouselData;
 
     constructor(
@@ -58,7 +58,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
         this.columnSpecialOffers$ = this.shop.getSpecialOffers(3);
         this.columnBestsellers$ = this.shop.getBestsellers(3);
 
-        this.featuredProducts = {
+        this.featuredProvider = {
             abort$: new Subject<void>(),
             loading: false,
             products: [],
@@ -66,26 +66,26 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                 {
                     name: 'All',
                     current: true,
-                    products$: this.shop.getFeaturedProducts(null, 8),
+                    products$: this.shop.getfeaturedProvider(null, 8),
                 },
                 {
                     name: 'Electricity',
                     current: false,
-                    products$: this.shop.getFeaturedProducts('electricity', 8),
+                    products$: this.shop.getfeaturedProvider('electricity', 8),
                 },
                 {
-                    name: 'Hand Tools',
+                    name: 'Carpenters',
                     current: false,
-                    products$: this.shop.getFeaturedProducts('Carpenters', 8),
+                    products$: this.shop.getfeaturedProvider('Carpenters', 8),
                 },
                 {
                     name: 'Plumbing',
                     current: false,
-                    products$: this.shop.getFeaturedProducts('plumbing', 8),
+                    products$: this.shop.getfeaturedProvider('plumbing', 8),
                 },
             ],
         };
-        this.groupChange(this.featuredProducts, this.featuredProducts.groups[0]);
+        this.groupChange(this.featuredProvider, this.featuredProvider.groups[0]);
 
         this.latestProducts = {
             abort$: new Subject<void>(),
@@ -103,7 +103,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                     products$: this.shop.getLatestProducts('electricity', 8),
                 },
                 {
-                    name: 'Hand Tools',
+                    name: 'Carpenters',
                     current: false,
                     products$: this.shop.getLatestProducts('Carpenters', 8),
                 },

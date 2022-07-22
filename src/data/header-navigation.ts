@@ -29,7 +29,7 @@ export const navigation: NavigationLink[] = [
     //             ]}
     //         ]},
     //         {size: 6, items: [
-    //             {label: 'Hand Tools', url: '/shop/catalog', items: [
+    //             {label: 'Carpenters', url: '/shop/catalog', items: [
     //                 {label: 'Screwdrivers', url: '/shop/catalog'},
     //                 {label: 'Handsaws', url: '/shop/catalog'},
     //                 {label: 'Knives', url: '/shop/catalog'},

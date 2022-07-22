@@ -22,7 +22,7 @@ export const departments: NavigationLink[] = [
                 {label: 'Riveters', url: '/shop/catalog'}
             ]},
             {size: 3, items: [
-                {label: 'Hand Tools', url: '/shop/catalog', items: [
+                {label: 'Carpenters', url: '/shop/catalog', items: [
                     {label: 'Screwdrivers', url: '/shop/catalog'},
                     {label: 'Handsaws', url: '/shop/catalog'},
                     {label: 'Knives', url: '/shop/catalog'},
@@ -51,19 +51,19 @@ export const departments: NavigationLink[] = [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
                     {label: 'Electricity', url: '/shop/catalog'},
-                    {label: 'Hand Tools', url: '/shop/catalog'},
+                    {label: 'Carpenters', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}
             ]}
         ]
     }},
-    {label: 'Hand Tools', url: '/shop/catalog', menu: {
+    {label: 'Carpenters', url: '/shop/catalog', menu: {
         type: 'megamenu',
         size: 'lg',
         image: 'assets/images/megamenu/megamenu-2.jpg',
         columns: [
             {size: 4, items: [
-                {label: 'Hand Tools', url: '/shop/catalog', items: [
+                {label: 'Carpenters', url: '/shop/catalog', items: [
                     {label: 'Screwdrivers', url: '/shop/catalog'},
                     {label: 'Handsaws', url: '/shop/catalog'},
                     {label: 'Knives', url: '/shop/catalog'},
@@ -92,7 +92,7 @@ export const departments: NavigationLink[] = [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
                     {label: 'Electricity', url: '/shop/catalog'},
-                    {label: 'Hand Tools', url: '/shop/catalog'},
+                    {label: 'Carpenters', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}
             ]}
@@ -104,7 +104,7 @@ export const departments: NavigationLink[] = [
         image: 'assets/images/megamenu/megamenu-3.jpg',
         columns: [
             {size: 6, items: [
-                {label: 'Hand Tools', url: '/shop/catalog', items: [
+                {label: 'Carpenters', url: '/shop/catalog', items: [
                     {label: 'Screwdrivers', url: '/shop/catalog'},
                     {label: 'Handsaws', url: '/shop/catalog'},
                     {label: 'Knives', url: '/shop/catalog'},
@@ -123,7 +123,7 @@ export const departments: NavigationLink[] = [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
                     {label: 'Electricity', url: '/shop/catalog'},
-                    {label: 'Hand Tools', url: '/shop/catalog'},
+                    {label: 'Carpenters', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}
             ]}
@@ -134,7 +134,7 @@ export const departments: NavigationLink[] = [
         size: 'sm',
         columns: [
             {size: 12, items: [
-                {label: 'Hand Tools', url: '/shop/catalog', items: [
+                {label: 'Carpenters', url: '/shop/catalog', items: [
                     {label: 'Screwdrivers', url: '/shop/catalog'},
                     {label: 'Handsaws', url: '/shop/catalog'},
                     {label: 'Knives', url: '/shop/catalog'},

@@ -3,12 +3,12 @@
 <app-block-features></app-block-features>
 
 <app-block-products-carousel
-    header="Featured Products"
+    header="Featured Provider"
     layout="grid-4"
-    [loading]="featuredProducts.loading"
-    [products]="featuredProducts.products"
-    [groups]="featuredProducts.groups"
-    (groupChange)="groupChange(featuredProducts, $event)"
+    [loading]="featuredProvider.loading"
+    [products]="featuredProvider.products"
+    [groups]="featuredProvider.groups"
+    (groupChange)="groupChange(featuredProvider, $event)"
 ></app-block-products-carousel>
 
 <app-block-banner></app-block-banner>

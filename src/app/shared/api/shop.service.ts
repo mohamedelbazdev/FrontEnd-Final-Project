@@ -253,7 +253,7 @@ export class ShopService {
         return getSpecialOffers(limit);
     }
 
-    getFeaturedProducts(categorySlug: string|null = null, limit: number|null = null): Observable<Product[]> {
+    getfeaturedProvider(categorySlug: string|null = null, limit: number|null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
