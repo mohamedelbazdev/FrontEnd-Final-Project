@@ -12,9 +12,9 @@ const shopCategoriesDef: CategoryDef[] = [
         items: 272,
         children: [
             {
-                name: 'Power Tools',
-                slug: 'power-tools',
-                image: 'assets/images/categories/category-1.jpg',
+                name: 'Electricity',
+                slug: 'electricity',
+                image: 'assets/images/categories/category-1.png',
                 items: 370,
                 children: [
                     {
@@ -55,9 +55,9 @@ const shopCategoriesDef: CategoryDef[] = [
                 ],
             },
             {
-                name: 'Hand Tools',
-                slug: 'hand-tools',
-                image: 'assets/images/categories/category-2.jpg',
+                name: 'Carpenters',
+                slug: 'Carpenters',
+                image: 'assets/images/categories/category-2.png',
                 items: 134,
                 children: [
                     {
@@ -88,9 +88,9 @@ const shopCategoriesDef: CategoryDef[] = [
                 ],
             },
             {
-                name: 'Machine Tools',
-                slug: 'machine-tools',
-                image: 'assets/images/categories/category-3.jpg',
+                name: 'Gardener',
+                slug: 'gardener',
+                image: 'assets/images/categories/category-3.png',
                 items: 302,
                 children: [
                     {
@@ -121,9 +121,9 @@ const shopCategoriesDef: CategoryDef[] = [
                 ],
             },
             {
-                name: 'Power Machinery',
-                slug: 'power-machinery',
-                image: 'assets/images/categories/category-4.jpg',
+                name: 'Plumbers',
+                slug: 'plumbers',
+                image: 'assets/images/categories/category-4.png',
                 items: 79,
                 children: [
                     {

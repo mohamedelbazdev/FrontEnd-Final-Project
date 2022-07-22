@@ -13,7 +13,7 @@ export const navigation: NavigationLink[] = [
         size: 'nl',
         columns: [
             {size: 6, items: [
-                {label: 'Power Tools', url: '/shop/catalog', items: [
+                {label: 'Electricity', url: '/shop/catalog', items: [
                     {label: 'Engravers', url: '/shop/catalog'},
                     {label: 'Wrenches', url: '/shop/catalog'},
                     {label: 'Wall Chaser', url: '/shop/catalog'},
@@ -46,11 +46,11 @@ export const navigation: NavigationLink[] = [
             ]}
         ]
     }},
-    {label: 'Shop', url: '/shop/catalog/power-tools', menu: {
+    {label: 'Shop', url: '/shop/catalog/electricity', menu: {
         type: 'menu',
         items: [
-            {label: 'Shop Grid', url: '/shop/catalog/power-tools', items: [
-                {label: '3 Columns Sidebar', url: '/shop/catalog/power-tools'},
+            {label: 'Shop Grid', url: '/shop/catalog/electricity', items: [
+                {label: '3 Columns Sidebar', url: '/shop/catalog/electricity'},
                 {label: '4 Columns Full',    url: '/shop/category-grid-4-columns-full'},
                 {label: '5 Columns Full',    url: '/shop/category-grid-5-columns-full'}
             ]},
@@ -98,13 +98,11 @@ export const navigation: NavigationLink[] = [
         items: [
             {label: 'About Us',             url: '/site/about-us'},
             {label: 'Contact Us',           url: '/site/contact-us'},
-            {label: 'Contact Us Alt',       url: '/site/contact-us-alt'},
             {label: '404',                  url: '/site/not-found'},
             {label: 'Terms And Conditions', url: '/site/terms'},
             {label: 'FAQ',                  url: '/site/faq'},
             {label: 'Components',           url: '/site/components'},
-            {label: 'Typography',           url: '/site/typography'}
         ]
     }},
-    {label: 'Buy Theme', url: 'https://themeforest.net/item/stroyka-tools-store-angular-7-template/23523630', external: true}
+    {label: 'Buy Theme', url: 'https://themeforest.net/item/serv-tools-store-angular-7-template/23523630', external: true}
 ];

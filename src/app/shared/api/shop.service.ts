@@ -47,10 +47,10 @@ export class ShopService {
         /**
          * This is what your API endpoint might look like:
          *
-         * https://example.com/api/shop/categories/power-tools.json
+         * https://example.com/api/shop/categories/electricity.json
          *
          * where:
-         * - power-tools = slug
+         * - electricity = slug
          */
         // return this.http.get<Category>(`https://example.com/api/shop/categories/${slug}.json`);
 
@@ -95,7 +95,7 @@ export class ShopService {
         /**
          * This is what your API endpoint might look like:
          *
-         * https://example.com/api/shop/categories.json?slugs=power-tools,measurement&depth=1
+         * https://example.com/api/shop/categories.json?slugs=electricity,measurement&depth=1
          *
          * where:
          * - slugs = slugs.join(',')
@@ -326,7 +326,7 @@ export class ShopService {
         /**
          * This is what your API endpoint might look like:
          *
-         * https://example.com/api/search/suggestions.json?query=screwdriver&limit=5&category=power-tools
+         * https://example.com/api/search/suggestions.json?query=screwdriver&limit=5&category=electricity
          *
          * where:
          * - query = query

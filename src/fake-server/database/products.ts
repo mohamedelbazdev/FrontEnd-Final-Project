@@ -532,9 +532,9 @@ export function getSpecialOffers(limit: number|null = null): Observable<Product[
 export function getFeatured(categorySlug: string|null = null, limit: number|null = null): Observable<Product[]> {
     let fakeProducts = products.slice();
 
-    if (categorySlug === 'power-tools') {
+    if (categorySlug === 'electricity') {
         fakeProducts = fakeProducts.reverse();
-    } else if (categorySlug === 'hand-tools') {
+    } else if (categorySlug === 'Carpenters') {
         fakeProducts = [...fakeProducts.slice(8), ...fakeProducts.slice(0, 8)];
     } else if (categorySlug === 'plumbing') {
         fakeProducts = [...fakeProducts.slice(8), ...fakeProducts.slice(0, 8)].reverse();

@@ -1,13 +1,13 @@
 import { NavigationLink } from '../app/shared/interfaces/navigation-link';
 
 export const departments: NavigationLink[] = [
-    {label: 'Power Tools', url: '/shop/catalog', menu: {
+    {label: 'Electricity', url: '/shop/catalog', menu: {
         type: 'megamenu',
         size: 'xl',
         image: 'assets/images/megamenu/megamenu-1.jpg',
         columns: [
             {size: 3, items: [
-                {label: 'Power Tools', url: '/shop/catalog', items: [
+                {label: 'Electricity', url: '/shop/catalog', items: [
                     {label: 'Engravers', url: '/shop/catalog'},
                     {label: 'Drills', url: '/shop/catalog'},
                     {label: 'Wrenches', url: '/shop/catalog'},
@@ -50,7 +50,7 @@ export const departments: NavigationLink[] = [
             {size: 3, items: [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
-                    {label: 'Power Tools', url: '/shop/catalog'},
+                    {label: 'Electricity', url: '/shop/catalog'},
                     {label: 'Hand Tools', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}
@@ -91,7 +91,7 @@ export const departments: NavigationLink[] = [
             {size: 4, items: [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
-                    {label: 'Power Tools', url: '/shop/catalog'},
+                    {label: 'Electricity', url: '/shop/catalog'},
                     {label: 'Hand Tools', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}
@@ -122,7 +122,7 @@ export const departments: NavigationLink[] = [
             {size: 6, items: [
                 {label: 'Instruments', url: '/shop/catalog', items: [
                     {label: 'Welding Equipment', url: '/shop/catalog'},
-                    {label: 'Power Tools', url: '/shop/catalog'},
+                    {label: 'Electricity', url: '/shop/catalog'},
                     {label: 'Hand Tools', url: '/shop/catalog'},
                     {label: 'Measuring Tool', url: '/shop/catalog'}
                 ]}

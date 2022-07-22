@@ -47,10 +47,10 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
         this.bestsellers$ = this.shop.getBestsellers(7);
         this.brands$ = this.shop.getPopularBrands();
         this.popularCategories$ = this.shop.getCategoriesBySlug([
-            'power-tools',
-            'hand-tools',
-            'machine-tools',
-            'power-machinery',
+            'electricity',
+            'Carpenters',
+            'gardener',
+            'plumbers',
             'measurement',
             'clothes-and-ppe',
         ], 1);
@@ -69,14 +69,14 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                     products$: this.shop.getFeaturedProducts(null, 8),
                 },
                 {
-                    name: 'Power Tools',
+                    name: 'Electricity',
                     current: false,
-                    products$: this.shop.getFeaturedProducts('power-tools', 8),
+                    products$: this.shop.getFeaturedProducts('electricity', 8),
                 },
                 {
                     name: 'Hand Tools',
                     current: false,
-                    products$: this.shop.getFeaturedProducts('hand-tools', 8),
+                    products$: this.shop.getFeaturedProducts('Carpenters', 8),
                 },
                 {
                     name: 'Plumbing',
@@ -98,14 +98,14 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
                     products$: this.shop.getLatestProducts(null, 8),
                 },
                 {
-                    name: 'Power Tools',
+                    name: 'Electricity',
                     current: false,
-                    products$: this.shop.getLatestProducts('power-tools', 8),
+                    products$: this.shop.getLatestProducts('electricity', 8),
                 },
                 {
                     name: 'Hand Tools',
                     current: false,
-                    products$: this.shop.getLatestProducts('hand-tools', 8),
+                    products$: this.shop.getLatestProducts('Carpenters', 8),
                 },
                 {
                     name: 'Plumbing',

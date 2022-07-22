@@ -8,7 +8,7 @@ export const mobileMenu: MobileMenuItem[] = [
     // ]},
 
     {type: 'link', label: 'Categories', url: '/shop/catalog', children: [
-        {type: 'link', label: 'Power Tools', url: '/shop/catalog', children: [
+        {type: 'link', label: 'Electricity', url: '/shop/catalog', children: [
             {type: 'link', label: 'Engravers',           url: '/shop/catalog'},
             {type: 'link', label: 'Wrenches',            url: '/shop/catalog'},
             {type: 'link', label: 'Wall Chaser',         url: '/shop/catalog'},
@@ -24,9 +24,9 @@ export const mobileMenu: MobileMenuItem[] = [
         ]}
     ]},
 
-    {type: 'link', label: 'Shop', url: '/shop/catalog/power-tools', children: [
-        {type: 'link', label: 'Shop Grid', url: '/shop/catalog/power-tools', children: [
-            {type: 'link', label: '3 Columns Sidebar',  url: '/shop/catalog/power-tools'},
+    {type: 'link', label: 'Shop', url: '/shop/catalog/electricity', children: [
+        {type: 'link', label: 'Shop Grid', url: '/shop/catalog/electricity', children: [
+            {type: 'link', label: '3 Columns Sidebar',  url: '/shop/catalog/electricity'},
             {type: 'link', label: '4 Columns Full',     url: '/shop/category-grid-4-columns-full'},
             {type: 'link', label: '5 Columns Full',     url: '/shop/category-grid-5-columns-full'}
         ]},
@@ -68,12 +68,10 @@ export const mobileMenu: MobileMenuItem[] = [
     {type: 'link', label: 'Pages', url: '/site', children: [
         {type: 'link', label: 'About Us',             url: '/site/about-us'},
         {type: 'link', label: 'Contact Us',           url: '/site/contact-us'},
-        {type: 'link', label: 'Contact Us Alt',       url: '/site/contact-us-alt'},
         {type: 'link', label: '404',                  url: '/site/not-found'},
         {type: 'link', label: 'Terms And Conditions', url: '/site/terms'},
         {type: 'link', label: 'FAQ',                  url: '/site/faq'},
         {type: 'link', label: 'Components',           url: '/site/components'},
-        {type: 'link', label: 'Typography',           url: '/site/typography'}
     ]},
 
     {type: 'button', label: 'Currency', children: [

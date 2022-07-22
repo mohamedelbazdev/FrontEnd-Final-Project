@@ -92,7 +92,7 @@ const routes: Routes = [
         data: {
             columns: 4,
             viewMode: 'grid',
-            categorySlug: 'power-tools',
+            categorySlug: 'electricity',
         },
         resolve: {
             category: CategoryResolverService,
@@ -105,7 +105,7 @@ const routes: Routes = [
         data: {
             columns: 5,
             viewMode: 'grid',
-            categorySlug: 'power-tools',
+            categorySlug: 'electricity',
         },
         resolve: {
             category: CategoryResolverService,
@@ -119,7 +119,7 @@ const routes: Routes = [
             columns: 3,
             viewMode: 'list',
             sidebarPosition: 'start',
-            categorySlug: 'power-tools',
+            categorySlug: 'electricity',
         },
         resolve: {
             category: CategoryResolverService,
@@ -133,7 +133,7 @@ const routes: Routes = [
             columns: 3,
             viewMode: 'grid',
             sidebarPosition: 'end',
-            categorySlug: 'power-tools',
+            categorySlug: 'electricity',
         },
         resolve: {
             category: CategoryResolverService,

@@ -1,5 +1,5 @@
 {
-  "name": "stroyka",
+  "name": "serv",
   "version": "1.18.0",
   "scripts": {
     "ng": "ng",
@@ -9,10 +9,10 @@
     "test": "ng test",
     "sprite": "svg-sprite --config src/sprite-config.json src/svg/*.svg",
     "start:ssr": "npm run build:ssr && npm run serve:ssr",
-    "dev:ssr": "ng run stroyka:serve-ssr",
-    "serve:ssr": "node dist/stroyka/server/main.js",
-    "build:ssr": "ng build && ng run stroyka:server",
-    "prerender": "ng run stroyka:prerender"
+    "dev:ssr": "ng run serv:serve-ssr",
+    "serve:ssr": "node dist/serv/server/main.js",
+    "build:ssr": "ng build && ng run serv:server",
+    "prerender": "ng run serv:prerender"
   },
   "private": true,
   "dependencies": {
