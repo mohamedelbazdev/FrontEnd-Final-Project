@@ -1,14 +1,13 @@
 import { NavigationLink } from '../app/shared/interfaces/navigation-link';
 
 export const navigation: NavigationLink[] = [
-    {label: 'Home', url: '/', menu: {
-        type: 'menu',
-        items: [
-            {label: 'Home 1', url: '/'},
-            {label: 'Home 2', url: '/home-two'},
-            {label: 'Offcanvas Cart', url: '/offcanvas-cart'}
-        ]
-    }},
+    {label: 'Home', url: '/',
+        // type: 'menu',
+        // items: [
+        //     {label: 'Home 1', url: '/'},
+
+        // ]
+    },
     {label: 'Megamenu', url: '/shop/catalog', menu: {
         type: 'megamenu',
         size: 'nl',

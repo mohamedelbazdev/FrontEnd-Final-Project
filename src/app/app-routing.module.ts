@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.component';
-import { PageHomeTwoComponent } from './pages/page-home-two/page-home-two.component';
 import { RootComponent } from './components/root/root.component';
-import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-offcanvas-cart.component';
 
 
 const routes: Routes = [
@@ -16,12 +14,7 @@ const routes: Routes = [
             headerLayout: 'compact',
             dropcartType: 'dropdown'
         },
-        children: [
-            {
-                path: '',
-                component: PageHomeTwoComponent
-            }
-        ],
+
     },
     {
         path: 'offcanvas-cart',
@@ -30,12 +23,7 @@ const routes: Routes = [
             headerLayout: 'classic',
             dropcartType: 'offcanvas'
         },
-        children: [
-            {
-                path: '',
-                component: PageOffcanvasCartComponent
-            }
-        ],
+
     },
     // END / ONLY_FOR_DEMO_YOU_CAN_DELETE_IT
     {

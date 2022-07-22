@@ -28,9 +28,7 @@ import { RootComponent } from './components/root/root.component';
 
 // pages
 import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.component';
-import { PageHomeTwoComponent } from './pages/page-home-two/page-home-two.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-offcanvas-cart.component';
 
 
 @NgModule({
@@ -40,9 +38,7 @@ import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-off
         RootComponent,
         // pages
         PageHomeOneComponent,
-        PageHomeTwoComponent,
         PageNotFoundComponent,
-        PageOffcanvasCartComponent
     ],
     imports: [
         // modules (angular)
