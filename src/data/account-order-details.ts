@@ -26,9 +26,9 @@ export const order: Order = {
         },
         {
             id: 2,
-            slug: 'undefined-tool-iradix-dps3000sy-2700-watts',
-            name: 'Undefined Tool IRadix DPS3000SY 2700 Watts',
-            image: 'assets/images/products/product-2.jpg',
+            slug: 'Laborer',
+            name: 'Laborer',
+            image: 'assets/images/products/product-2.PNG',
             price: 849,
             quantity: 1,
             total: 849,
@@ -70,7 +70,6 @@ export const order: Order = {
         phone: '01100000000',
         country: 'Random Federation',
         city: 'Moscow',
-        postcode: '115302',
         address: 'ul. Varshavskaya, 15-2-178'
     },
     billingAddress: {
@@ -80,7 +79,6 @@ export const order: Order = {
         phone: 'ZX 971 972-57-26',
         country: 'RandomLand',
         city: 'MarsGrad',
-        postcode: '4b4f53',
         address: 'Sun Orbit, 43.3241-85.239'
     },
 };
