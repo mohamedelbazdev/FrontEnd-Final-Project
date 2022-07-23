@@ -105,22 +105,22 @@
         </div>
         <div class="product-card__buttons">
             <button
-                class="btn btn-primary product-card__addtocart"
+                class="btn btn-primary product-card__addToBook"
                 type="button"
                 appClick
-                (click)="addToCart()"
-                [ngClass]="{ 'btn-loading': addingToCart }"
+                (click)="addToBook()"
+                [ngClass]="{ 'btn-loading': addingToBook }"
             >
-                Order
+                Book
             </button>
             <button
-                class="btn btn-secondary product-card__addtocart product-card__addtocart--list"
+                class="btn btn-secondary product-card__addToBook product-card__addToBook--list"
                 type="button"
                 appClick
-                (click)="addToCart()"
-                [ngClass]="{ 'btn-loading': addingToCart }"
+                (click)="addToBook()"
+                [ngClass]="{ 'btn-loading': addingToBook }"
             >
-                Order
+                Book
             </button>
             <button
                 class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
