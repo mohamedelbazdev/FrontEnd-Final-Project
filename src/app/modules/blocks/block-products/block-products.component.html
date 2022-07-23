@@ -8,9 +8,9 @@
                 <ng-container *ngIf="large !== null">
                     <div class="block-products__featured">
                         <div class="block-products__featured-item">
-                            <app-product-card
+                            <app-provider-card
                                 [product]="large"
-                            ></app-product-card>
+                            ></app-provider-card>
                         </div>
                     </div>
                 </ng-container>
@@ -21,9 +21,9 @@
                         *ngFor="let product of smalls"
                         class="block-products__list-item"
                     >
-                        <app-product-card
+                        <app-provider-card
                             [product]="product"
-                        ></app-product-card>
+                        ></app-provider-card>
                     </div>
                 </div>
             </ng-template>

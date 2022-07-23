@@ -10,7 +10,7 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
-    selector: 'app-product-card',
+    selector: 'app-provider-card',
     templateUrl: './product-card.component.html',
     styleUrls: ['./product-card.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -21,7 +21,7 @@ export class ProductCardComponent implements OnInit, OnDestroy, OnChanges {
     @Input() product!: Product;
     @Input() layout: 'grid-sm'|'grid-nl'|'grid-lg'|'list'|'horizontal'|null = null;
 
-    addingToCart = false;
+    addingToBook = false;
     addingToWishlist = false;
     addingToCompare = false;
     showingQuickview = false;
@@ -54,15 +54,15 @@ export class ProductCardComponent implements OnInit, OnDestroy, OnChanges {
         }
     }
 
-    addToCart(): void {
-        if (this.addingToCart) {
+    addToBook(): void {
+        if (this.addingToBook) {
             return;
         }
 
-        this.addingToCart = true;
+        this.addingToBook = true;
         this.cart.add(this.product, 1).subscribe({
             complete: () => {
-                this.addingToCart = false;
+                this.addingToBook = false;
                 this.cd.markForCheck();
             }
         });

@@ -58,7 +58,7 @@ export class PageCompareComponent implements OnInit, OnDestroy {
         this.destroy$.complete();
     }
 
-    addToCart(product: Product): void {
+    addToBook(product: Product): void {
         if (this.addedToCartProducts.includes(product)) {
             return;
         }

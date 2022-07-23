@@ -163,7 +163,7 @@ export class SearchComponent implements OnChanges, OnInit, OnDestroy {
         return '&nbsp;'.repeat(category.depth * 4) + category.name;
     }
 
-    addToCart(product: Product): void {
+    addToBook(product: Product): void {
         if (this.addedToCartProducts.includes(product)) {
             return;
         }

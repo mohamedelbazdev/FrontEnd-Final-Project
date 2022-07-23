@@ -19,7 +19,7 @@ export class PageWishlistComponent {
     addedToCartProducts: Product[] = [];
     removedProducts: Product[] = [];
 
-    addToCart(product: Product): void {
+    addToBook(product: Product): void {
         if (this.addedToCartProducts.includes(product)) {
             return;
         }

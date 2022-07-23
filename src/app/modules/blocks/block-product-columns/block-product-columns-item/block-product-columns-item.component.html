@@ -2,6 +2,9 @@
 
 <div class="block-product-columns__column">
     <div *ngFor="let product of products" class="block-product-columns__item">
-        <app-product-card [product]="product" layout="horizontal"></app-product-card>
+        <app-provider-card
+            [product]="product"
+            layout="horizontal"
+        ></app-provider-card>
     </div>
 </div>

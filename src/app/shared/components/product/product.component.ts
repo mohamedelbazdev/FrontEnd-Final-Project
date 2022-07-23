@@ -20,7 +20,7 @@ export class ProductComponent {
 
     quantity: FormControl = new FormControl(1);
 
-    addingToCart = false;
+    addingToBook = false;
     addingToWishlist = false;
     addingToCompare = false;
 
@@ -32,11 +32,11 @@ export class ProductComponent {
         public root: RootService,
     ) { }
 
-    addToCart(): void {
-        if (!this.addingToCart && this.product && this.quantity.value > 0) {
-            this.addingToCart = true;
+    addToBook(): void {
+        if (!this.addingToBook && this.product && this.quantity.value > 0) {
+            this.addingToBook = true;
 
-            this.cart.add(this.product, this.quantity.value).subscribe({complete: () => this.addingToCart = false});
+            this.cart.add(this.product, this.quantity.value).subscribe({complete: () => this.addingToBook = false});
         }
     }
 
