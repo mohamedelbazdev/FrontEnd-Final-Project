@@ -2,20 +2,37 @@
     <div class="product__content">
         <!-- .product__gallery -->
         <div class="product__gallery">
-            <app-product-gallery [productLayout]="layout" [images]="product.images"></app-product-gallery>
+            <app-product-gallery
+                [productLayout]="layout"
+                [images]="product.images"
+            ></app-product-gallery>
         </div>
         <!-- .product__gallery / end -->
         <!-- .product__info -->
         <div class="product__info">
             <div class="product__wishlist-compare">
-                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Wishlist"
-                        appClick (click)="addToWishlist()"
-                        [ngClass]="{'btn-loading': addingToWishlist}">
+                <button
+                    type="button"
+                    class="btn btn-sm btn-light btn-svg-icon"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Wishlist"
+                    appClick
+                    (click)="addToWishlist()"
+                    [ngClass]="{ 'btn-loading': addingToWishlist }"
+                >
                     <app-icon name="wishlist-16" size="16"></app-icon>
                 </button>
-                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Compare"
-                        appClick (click)="addToCompare()"
-                        [ngClass]="{'btn-loading': addingToCompare}">
+                <button
+                    type="button"
+                    class="btn btn-sm btn-light btn-svg-icon"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    appClick
+                    (click)="addToCompare()"
+                    [ngClass]="{ 'btn-loading': addingToCompare }"
+                >
                     <app-icon name="compare-16" size="16"></app-icon>
                 </button>
             </div>
@@ -25,12 +42,15 @@
                     <app-rating [value]="product.rating"></app-rating>
                 </div>
                 <div class="product__rating-legend">
-                    <a href="" appClick>{{ product.reviews }} Reviews</a><span>/</span><a href="" appClick>Write A Review</a>
+                    <a href="" appClick>{{ product.reviews }} Reviews</a
+                    ><span>/</span><a href="" appClick>Write A Review</a>
                 </div>
             </div>
             <div class="product__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh
-                lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ornare, mi in ornare elementum, libero nibh lacinia
+                urna, quis convallis lorem erat at purus. Maecenas eu varius
+                nisi.
             </div>
             <ul class="product__features">
                 <li>Speed: 750 RPM</li>
@@ -40,7 +60,9 @@
                 <li>Battery Capacity: 2 Ah</li>
             </ul>
             <ul class="product__meta">
-                <li class="product__meta-availability">Availability: <span class="text-success">In Stock</span></li>
+                <li class="product__meta-availability">
+                    Availability: <span class="text-success">In Stock</span>
+                </li>
                 <li>Brand: <a href="" appClick>Wakita</a></li>
                 <li>SKU: 83690/32</li>
             </ul>
@@ -54,11 +76,16 @@
 
             <div class="product__prices">
                 <ng-container *ngIf="product.compareAtPrice">
-                    <span class="product__new-price">{{ product.price|currencyFormat }}</span>{{ ' ' }}
-                    <span class="product__old-price">{{ product.compareAtPrice|currencyFormat }}</span>
+                    <span class="product__new-price">{{
+                        product.price | currencyFormat
+                    }}</span
+                    >{{ " " }}
+                    <span class="product__old-price">{{
+                        product.compareAtPrice | currencyFormat
+                    }}</span>
                 </ng-container>
                 <ng-container *ngIf="!product.compareAtPrice">
-                    {{ product.price|currencyFormat }}
+                    {{ product.price | currencyFormat }}
                 </ng-container>
             </div>
             <!-- .product__options -->
@@ -67,20 +94,40 @@
                     <label class="product__option-label">Color</label>
                     <div class="input-radio-color">
                         <div class="input-radio-color__list">
-                            <label class="input-radio-color__item input-radio-color__item--white" style="color: #fff;" data-toggle="tooltip" title="White">
-                                <input type="radio" name="color">
+                            <label
+                                class="input-radio-color__item input-radio-color__item--white"
+                                style="color: #fff"
+                                data-toggle="tooltip"
+                                title="White"
+                            >
+                                <input type="radio" name="color" />
                                 <span></span>
                             </label>
-                            <label class="input-radio-color__item" style="color: #ffd333;" data-toggle="tooltip" title="Yellow">
-                                <input type="radio" name="color">
+                            <label
+                                class="input-radio-color__item"
+                                style="color: #fd3939"
+                                data-toggle="tooltip"
+                                title="Yellow"
+                            >
+                                <input type="radio" name="color" />
                                 <span></span>
                             </label>
-                            <label class="input-radio-color__item" style="color: #ff4040;" data-toggle="tooltip" title="Red">
-                                <input type="radio" name="color">
+                            <label
+                                class="input-radio-color__item"
+                                style="color: #ff4040"
+                                data-toggle="tooltip"
+                                title="Red"
+                            >
+                                <input type="radio" name="color" />
                                 <span></span>
                             </label>
-                            <label class="input-radio-color__item input-radio-color__item--disabled" style="color: #4080ff;" data-toggle="tooltip" title="Blue">
-                                <input type="radio" name="color" disabled>
+                            <label
+                                class="input-radio-color__item input-radio-color__item--disabled"
+                                style="color: #4080ff"
+                                data-toggle="tooltip"
+                                title="Blue"
+                            >
+                                <input type="radio" name="color" disabled />
                                 <span></span>
                             </label>
                         </div>
@@ -91,15 +138,15 @@
                     <div class="input-radio-label">
                         <div class="input-radio-label__list">
                             <label>
-                                <input type="radio" name="material">
+                                <input type="radio" name="material" />
                                 <span>Metal</span>
                             </label>
                             <label>
-                                <input type="radio" name="material">
+                                <input type="radio" name="material" />
                                 <span>Wood</span>
                             </label>
                             <label>
-                                <input type="radio" name="material" disabled>
+                                <input type="radio" name="material" disabled />
                                 <span>Plastic</span>
                             </label>
                         </div>
@@ -109,25 +156,61 @@
                     <label class="product__option-label">Quantity</label>
                     <div class="product__actions">
                         <div class="product__actions-item">
-                            <app-input-number aria-label="Quantity" class="product__quantity" size="lg" [min]="1" [formControl]="quantity"></app-input-number>
+                            <app-input-number
+                                aria-label="Quantity"
+                                class="product__quantity"
+                                size="lg"
+                                [min]="1"
+                                [formControl]="quantity"
+                            ></app-input-number>
                         </div>
-                        <div class="product__actions-item product__actions-item--addtocart">
-                            <button type="button" class="btn btn-primary btn-lg"
-                                    [ngClass]="{'btn-loading': addingToCart}"
-                                    appClick (click)="addToCart()">Add to cart</button>
-                        </div>
-                        <div class="product__actions-item product__actions-item--wishlist">
-                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="Wishlist"
-                                    [ngClass]="{'btn-loading': addingToWishlist}"
-                                    appClick (click)="addToWishlist()">
-                                <app-icon name="wishlist-16" size="16"></app-icon>
+                        <div
+                            class="product__actions-item product__actions-item--addtocart"
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                                [ngClass]="{ 'btn-loading': addingToCart }"
+                                appClick
+                                (click)="addToCart()"
+                            >
+                                Add to cart
                             </button>
                         </div>
-                        <div class="product__actions-item product__actions-item--compare">
-                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="Compare"
-                                    [ngClass]="{'btn-loading': addingToCompare}"
-                                    appClick (click)="addToCompare()">
-                                <app-icon name="compare-16" size="16"></app-icon>
+                        <div
+                            class="product__actions-item product__actions-item--wishlist"
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-svg-icon btn-lg"
+                                data-toggle="tooltip"
+                                title="Wishlist"
+                                [ngClass]="{ 'btn-loading': addingToWishlist }"
+                                appClick
+                                (click)="addToWishlist()"
+                            >
+                                <app-icon
+                                    name="wishlist-16"
+                                    size="16"
+                                ></app-icon>
+                            </button>
+                        </div>
+                        <div
+                            class="product__actions-item product__actions-item--compare"
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-svg-icon btn-lg"
+                                data-toggle="tooltip"
+                                title="Compare"
+                                [ngClass]="{ 'btn-loading': addingToCompare }"
+                                appClick
+                                (click)="addToCompare()"
+                            >
+                                <app-icon
+                                    name="compare-16"
+                                    size="16"
+                                ></app-icon>
                             </button>
                         </div>
                     </div>
@@ -147,10 +230,14 @@
 
             <app-share-buttons
                 class="product__share-buttons"
-                [buttons]="['facebook', {type: 'twitter', label: 'Tweet'}, 'pinterest']"
-                [pageUrl]="root.product(product)|absoluteUrl:'angular'"
+                [buttons]="[
+                    'facebook',
+                    { type: 'twitter', label: 'Tweet' },
+                    'pinterest'
+                ]"
+                [pageUrl]="root.product(product) | absoluteUrl: 'angular'"
                 [pageTitle]="product.name"
-                [pageImage]="product.images[0]|absoluteUrl:'html'"
+                [pageImage]="product.images[0] | absoluteUrl: 'html'"
             ></app-share-buttons>
         </div>
     </div>

@@ -124,7 +124,7 @@
    $dark-color:                     $light-opposite-color !default;
    $dark-opposite-color:            $light-color          !default;
    // accent
-   $accent-color:                   #ffd333               !default;
+   $accent-color:                   #fd3939               !default;
    $accent-opposite-color:          $light-opposite-color !default;
    //links
    $link-color:                     #1a66ff               !default;
@@ -768,7 +768,7 @@
       $rating-legend-font-color:         #b3b3b3                           !default;
       $rating-star-default-color:        #ccc                              !default;
       $rating-star-default-stroke-color: rgba(#000, .08)                   !default;
-      $rating-star-active-color:         #ffd333                           !default;
+      $rating-star-active-color:         #fd3939                           !default;
       $rating-star-active-stroke-color:  $rating-star-default-stroke-color !default;
 
    // ----------------------------------------
