@@ -16,208 +16,37 @@ const shopCategoriesDef: CategoryDef[] = [
                 slug: 'electricity',
                 image: 'assets/images/categories/category-1.png',
                 items: 370,
-                children: [
-                    {
-                        name: 'Drills & Mixers',
-                        slug: 'drills-mixers',
-                        items: 57,
-                    },
-                    {
-                        name: 'Cordless Screwdrivers',
-                        slug: 'cordless-screwdrivers',
-                        items: 15,
-                    },
-                    {
-                        name: 'Screwdrivers',
-                        slug: 'screwdrivers',
-                        items: 126,
-                    },
-                    {
-                        name: 'Wrenches',
-                        slug: 'wrenches',
-                        items: 12,
-                    },
-                    {
-                        name: 'Grinding Machines',
-                        slug: 'grinding-machines',
-                        items: 25,
-                    },
-                    {
-                        name: 'Milling Cutters',
-                        slug: 'milling-cutters',
-                        items: 78,
-                    },
-                    {
-                        name: 'Electric Spray Guns',
-                        slug: 'electric-spray-guns',
-                        items: 3,
-                    },
-                ],
+
             },
             {
                 name: 'Carpenters',
                 slug: 'Carpenters',
                 image: 'assets/images/categories/category-2.png',
                 items: 134,
-                children: [
-                    {
-                        name: 'Tool Kits',
-                        slug: 'tool-kits',
-                        items: 57,
-                    },
-                    {
-                        name: 'Hammers',
-                        slug: 'hammers',
-                        items: 15,
-                    },
-                    {
-                        name: 'Spanners',
-                        slug: 'spanners',
-                        items: 5,
-                    },
-                    {
-                        name: 'Handsaws',
-                        slug: 'handsaws',
-                        items: 54,
-                    },
-                    {
-                        name: 'Paint Tools',
-                        slug: 'paint-tools',
-                        items: 13,
-                    },
-                ],
             },
             {
                 name: 'Gardener',
                 slug: 'gardener',
                 image: 'assets/images/categories/category-3.png',
                 items: 302,
-                children: [
-                    {
-                        name: 'Lathes',
-                        slug: 'lathes',
-                        items: 104,
-                    },
-                    {
-                        name: 'Milling Machines',
-                        slug: 'milling-machines',
-                        items: 12,
-                    },
-                    {
-                        name: 'Grinding Machines',
-                        slug: 'grinding-machines',
-                        items: 67,
-                    },
-                    {
-                        name: 'CNC Machines',
-                        slug: 'cnc-machines',
-                        items: 5,
-                    },
-                    {
-                        name: 'Sharpening Machines',
-                        slug: 'sharpening-machines',
-                        items: 88,
-                    },
-                ],
             },
             {
                 name: 'Plumbers',
                 slug: 'plumbers',
                 image: 'assets/images/categories/category-4.png',
                 items: 79,
-                children: [
-                    {
-                        name: 'Generators',
-                        slug: 'generators',
-                        items: 23,
-                    },
-                    {
-                        name: 'Compressors',
-                        slug: 'compressors',
-                        items: 76,
-                    },
-                    {
-                        name: 'Winches',
-                        slug: 'winches',
-                        items: 43,
-                    },
-                    {
-                        name: 'Plasma Cutting',
-                        slug: 'plasma-cutting',
-                        items: 128,
-                    },
-                    {
-                        name: 'Electric Motors',
-                        slug: 'electric-motors',
-                        items: 76,
-                    },
-                ],
             },
             {
                 name: 'Cleanliness',
                 slug: 'Cleanliness',
                 image: 'assets/images/categories/category-5.png',
                 items: 366,
-                children: [
-                    {
-                        name: 'Tape Measure',
-                        slug: 'tape-measure',
-                        items: 57,
-                    },
-                    {
-                        name: 'Theodolites',
-                        slug: 'theodolites',
-                        items: 5,
-                    },
-                    {
-                        name: 'Thermal Imagers',
-                        slug: 'thermal-imagers',
-                        items: 3,
-                    },
-                    {
-                        name: 'Calipers',
-                        slug: 'calipers',
-                        items: 37,
-                    },
-                    {
-                        name: 'Levels',
-                        slug: 'levels',
-                        items: 14,
-                    },
-                ],
             },
             {
                 name: 'Maintenance',
                 slug: 'Maintenance',
                 image: 'assets/images/categories/category-6.png',
                 items: 82,
-                children: [
-                    {
-                        name: 'Winter Workwear',
-                        slug: 'winter-workwear',
-                        items: 24,
-                    },
-                    {
-                        name: 'Summer Workwear',
-                        slug: 'summer-workwear',
-                        items: 87,
-                    },
-                    {
-                        name: 'Helmets',
-                        slug: 'helmets',
-                        items: 9,
-                    },
-                    {
-                        name: 'Belts and Bags',
-                        slug: 'belts-and-bags',
-                        items: 1,
-                    },
-                    {
-                        name: 'Work Shoes',
-                        slug: 'work-shoes',
-                        items: 0,
-                    },
-                ],
             },
         ],
     },
@@ -260,28 +89,6 @@ const blogCategoriesDef: CategoryDef[] = [
     {
         name: 'Special Offers',
         slug: 'special-offers',
-        children: [
-            {
-                name: 'Spring Sales',
-                slug: 'spring-sales',
-            },
-            {
-                name: 'Summer Sales',
-                slug: 'summer-sales',
-            },
-            {
-                name: 'Autumn Sales',
-                slug: 'autumn-sales',
-            },
-            {
-                name: 'Christmas Sales',
-                slug: 'christmas-sales',
-            },
-            {
-                name: 'Other Sales',
-                slug: 'other-sales',
-            }
-        ],
     },
     {
         name: 'New Arrivals',
@@ -322,7 +129,6 @@ function walkTree(categoriesType: 'shop'|'blog', categoriesDef: CategoryDef[], p
             items: categoryDef.items || 0,
             customFields: {},
             parents: parents.slice(),
-            children: [],
         };
 
         const [childrenTree, childrenList] = walkTree(categoriesType, categoryDef.children || [], [...parents, category]);
