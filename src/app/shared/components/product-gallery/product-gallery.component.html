@@ -1,14 +1,6 @@
-<div
-    class="product-gallery__featured"
-    redZoomClass="product-red-zoom product-red-zoom--layout--{{ productLayout }}"
-    [redZoom]="currentItem?.image || ''"
-    [redZoomThumb]="currentItem?.image || ''"
-    [redZoomLazy]="true"
->
+
     <div class="product-gallery__featured-inset">
-        <button *ngIf="productLayout !== 'quickview'" class="product-gallery__zoom" (click)="openPhotoSwipe(currentItem)">
-            <app-icon name="zoom-in-24" size="24"></app-icon>
-        </button>
+
         <owl-carousel-o [options]="carouselOptions" (changed)="featuredCarouselTranslated($event)" appOwlPreventClick #featuredCarousel>
             <!--suppress AngularUndefinedBinding -->
             <ng-template *ngFor="let item of items" carouselSlide [id]="item.id">
@@ -34,7 +26,7 @@
             </ng-template>
         </owl-carousel-o>
     </div>
-</div>
+
 <div class="product-gallery__carousel">
     <owl-carousel-o
         appOwlPreventClick
