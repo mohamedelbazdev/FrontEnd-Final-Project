@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class StoreService {
-    address = 'جامعة سوهاج الجديدة New، مركز سوهاج، سوهاج';
+    address = 'جامعة سوهاج الجديدة ، مركز سوهاج، سوهاج';
     email = 'https://www.iti.gov.eg/';
     phone = ['01100101010'];
     hours = 'Mon-Sat 10:00pm - 7:00pm';
