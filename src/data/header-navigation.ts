@@ -106,6 +106,5 @@ export const navigation: NavigationLink[] = [
     //     ]
     // }},
     // {label: 'Buy Theme', url: 'https://themeforest.net/item/stroyka-tools-store-angular-7-template/23523630', external: true}
-    // {label: 'Buy Theme', url: 'https://themeforest.net/item/serv-tools-store-angular-7-template/23523630', external: true}
-
+    //
 ];
