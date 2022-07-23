@@ -66,8 +66,8 @@ export const order: Order = {
     shippingAddress: {
         firstName: 'Helena',
         lastName: 'Garcia',
-        email: 'serv@example.com',
-        phone: '38 972 588-42-36',
+        email: ' GroupOne@iti.com',
+        phone: '01100000000',
         country: 'Random Federation',
         city: 'Moscow',
         postcode: '115302',
@@ -76,7 +76,7 @@ export const order: Order = {
     billingAddress: {
         firstName: 'Jupiter',
         lastName: 'Saturnov',
-        email: 'serv@example.com',
+        email: 'GroupOne@iti.com',
         phone: 'ZX 971 972-57-26',
         country: 'RandomLand',
         city: 'MarsGrad',
