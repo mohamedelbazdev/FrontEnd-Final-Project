@@ -6,7 +6,7 @@ import { RootComponent } from './components/root/root.component';
 
 
 const routes: Routes = [
-    // START / ONLY_FOR_DEMO_YOU_CAN_DELETE_IT
+    // START
     {
         path: 'home-two',
         component: RootComponent,

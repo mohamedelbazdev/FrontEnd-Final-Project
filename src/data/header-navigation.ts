@@ -70,19 +70,19 @@ export const navigation: NavigationLink[] = [
     //         {label: 'Track Order', url: '/shop/track-order'},
     //     ]
     // }},
-    // {label: 'Account', url: '/account', menu: {
-    //     type: 'menu',
-    //     items: [
-    //         {label: 'Login',           url: '/account/login'},
-    //         {label: 'Dashboard',       url: '/account/dashboard'},
-    //         {label: 'Edit Profile',    url: '/account/profile'},
-    //         {label: 'Order History',   url: '/account/orders'},
-    //         {label: 'Order Details',   url: '/account/orders/5'},
-    //         {label: 'Address Book',    url: '/account/addresses'},
-    //         {label: 'Edit Address',    url: '/account/addresses/5'},
-    //         {label: 'Change Password', url: '/account/password'}
-    //     ]
-    // }},
+    {label: 'Account', url: '/account', menu: {
+        type: 'menu',
+        items: [
+            {label: 'Login',           url: '/account/login'},
+            {label: 'Dashboard',       url: '/account/dashboard'},
+            {label: 'Edit Profile',    url: '/account/profile'},
+            {label: 'Order History',   url: '/account/orders'},
+            {label: 'Order Details',   url: '/account/orders/5'},
+            {label: 'Address Book',    url: '/account/addresses'},
+            {label: 'Edit Address',    url: '/account/addresses/5'},
+            {label: 'Change Password', url: '/account/password'}
+        ]
+    }},
     // {label: 'Blog', url: '/blog', menu: {
     //     type: 'menu',
     //     items: [

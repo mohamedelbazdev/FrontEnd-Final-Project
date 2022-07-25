@@ -70,6 +70,7 @@ export const order: Order = {
         phone: '01100000000',
         country: 'Random Federation',
         city: 'Moscow',
+        postcode: '115302',
         address: 'ul. Varshavskaya, 15-2-178'
     },
     billingAddress: {
@@ -79,6 +80,7 @@ export const order: Order = {
         phone: 'ZX 971 972-57-26',
         country: 'RandomLand',
         city: 'MarsGrad',
+        postcode: '115302',
         address: 'Sun Orbit, 43.3241-85.239'
     },
 };

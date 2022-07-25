@@ -9,6 +9,7 @@ export const addresses: Address[] = [
         phone: '38 972 588-42-36',
         country: 'Random Federation',
         city: 'Moscow',
+        postcode:'55555',
         address: 'ul. Varshavskaya, 15-2-178'
     },
     {
@@ -19,6 +20,7 @@ export const addresses: Address[] = [
         phone: 'ZX 971 972-57-26',
         country: 'RandomLand',
         city: 'MarsGrad',
+        postcode:'55555',
         address: 'Sun Orbit, 43.3241-85.239'
     }
 ];
