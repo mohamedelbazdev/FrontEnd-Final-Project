@@ -7,24 +7,7 @@ import { RootComponent } from './components/root/root.component';
 
 const routes: Routes = [
     // START / ONLY_FOR_DEMO_YOU_CAN_DELETE_IT
-    {
-        path: 'home-two',
-        component: RootComponent,
-        data: {
-            headerLayout: 'compact',
-            dropcartType: 'dropdown'
-        },
 
-    },
-    {
-        path: 'offcanvas-cart',
-        component: RootComponent,
-        data: {
-            headerLayout: 'classic',
-            dropcartType: 'offcanvas'
-        },
-
-    },
     // END / ONLY_FOR_DEMO_YOU_CAN_DELETE_IT
     {
         path: '',
