@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.component';
 import { RootComponent } from './components/root/root.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,11 @@ const routes: Routes = [
                 path: '',
                 pathMatch: 'full',
                 component: PageHomeOneComponent
+            },
+            {
+                path: 'chat',
+                pathMatch: 'full',
+                component: ChatComponent
             },
             {
                 path: 'shop',
