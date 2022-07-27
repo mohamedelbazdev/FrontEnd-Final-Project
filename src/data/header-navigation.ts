@@ -8,6 +8,8 @@ export const navigation: NavigationLink[] = [
 
         // ]
     },
+    {label: 'Chat', url: '/chat',
+    },
 
     {label: 'Megamenu', url: '/shop/catalog', menu: {
         type: 'megamenu',
