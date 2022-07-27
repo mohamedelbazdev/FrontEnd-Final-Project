@@ -56,6 +56,52 @@
                                 <label>Repeat Password</label>
                                 <input type="password" class="form-control" placeholder="Password">
                             </div>
+                            <div class="form-group">
+                                <label>Enter Your Image</label>
+                                <input type="file" class="form-control" placeholder="your Image">
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                            <a  class="btn btn-secondary" onclick="getLocation()">Get Location</a>
+                            <p id="para"></p>
+                            <script>
+                                const paraElem = document.getElementById("para");
+                                function getLocation() {
+                                    if (navigator.geolocation) {
+                                        navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                    } else {
+                                        paraElem.innerHTML = "Geolocation is not supported in this browser"
+                                    }
+                                }
+                                function showPosition(pos) {
+                                    const lat = pos.coords.latitude;
+                                    const lon = pos.coords.longitude;
+                                    paraElem.innerHTML = "Latitude= " + lat + "<br> and Longitude= " + lon;
+                                    const url = "http://maps.google.com/maps?q=" + lat + "," + lon;
+                                    alert(url);
+                                    window.open(url, "_blank");
+                                }
+                                function showError(error){
+                                    switch (error.code) {
+                                        case error.PERMISSION_DENIED:
+                                            paraElem.innerHTML = "User Denied request for geolocation";
+                                            break;
+                                        case error.POSITION_UNAVAILABLE:
+                                            x.innerHTML = "Location information is unavailable."
+                                            break;
+                                        case error.TIMEOUT:
+                                            x.innerHTML = "The request to get user location timed out."
+                                            break;
+                                        case error.UNKNOWN_ERROR:
+                                            x.innerHTML = "An unknown error occurred."
+                                            break;
+                                    }
+                                }
+                            </script>
+                             </div>
                             <button type="submit" class="btn btn-primary mt-2 mt-md-3 mt-lg-4">Register</button>
                         </form>
                     </div>
