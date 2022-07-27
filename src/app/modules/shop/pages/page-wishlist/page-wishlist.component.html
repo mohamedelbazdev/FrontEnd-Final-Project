@@ -29,7 +29,7 @@
                         Product
                     </th>
                     <th class="wishlist__column wishlist__column--stock">
-                        Stock Status
+                         Status
                     </th>
                     <th class="wishlist__column wishlist__column--price">
                         Price
@@ -72,10 +72,10 @@
                         </div>
                     </td>
                     <td class="wishlist__column wishlist__column--stock">
-                        <div class="badge badge-success">In Stock</div>
+                        <div class="badge badge-success">Available</div>
                     </td>
                     <td class="wishlist__column wishlist__column--price">
-                        {{ product.price | currencyFormat }}
+                        {{ product.price | currency:'EGP' }}
                     </td>
                     <td class="wishlist__column wishlist__column--tocart">
                         <button

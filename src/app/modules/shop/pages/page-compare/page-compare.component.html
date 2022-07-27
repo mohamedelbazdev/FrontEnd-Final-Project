@@ -75,7 +75,7 @@
                     <tr>
                         <th>Price</th>
                         <td *ngFor="let product of products">
-                            {{ product.price | currencyFormat }}
+                            {{ product.price | currency:'EGP' }}
                         </td>
                     </tr>
                     <tr>

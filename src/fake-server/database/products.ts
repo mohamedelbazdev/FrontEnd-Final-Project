@@ -36,9 +36,9 @@ export const attributesDef: AttributeDef[] = [
 
 const productsDef: ProductDef[] = [
     {
-        slug: 'electric-planer-brandix-kl370090g-300-watts',
-        name: 'Electric Planer Brandix KL370090G 300 Watts',
-        price: 749,
+        slug: 'A builder',
+        name: 'A builder',
+        price: 150,
         images: [
             'assets/images/products/product-1.jpg',
             'assets/images/products/product-1-1.jpg',
@@ -46,7 +46,7 @@ const productsDef: ProductDef[] = [
         badges: 'new',
         rating: 4,
         reviews: 12,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'brandix',
         categories: ['screwdrivers'],
         attributes: [
@@ -58,9 +58,9 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'undefined-tool-iradix-dps3000sy-2700-watts',
-        name: 'Undefined Tool IRadix DPS3000SY 2700 Watts',
-        price: 1019,
+        slug: 'Carpenter',
+        name: 'Carpenter',
+        price: 120,
         images: [
             'assets/images/products/product-2.jpg',
             'assets/images/products/product-2-1.jpg',
@@ -68,7 +68,7 @@ const productsDef: ProductDef[] = [
         badges: 'hot',
         rating: 5,
         reviews: 3,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'zosch',
         categories: [],
         attributes: [
@@ -79,16 +79,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'drill-screwdriver-brandix-alx7054-200-watts',
-        name: 'Drill Screwdriver Brandix ALX7054 200 Watts',
-        price: 850,
+        slug: 'Carpenter',
+        name: 'Carpenter',
+        price: 150,
         images: [
             'assets/images/products/product-3.jpg',
             'assets/images/products/product-3-1.jpg',
         ],
         rating: 4,
         reviews: 8,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'brandix',
         categories: [],
         attributes: [
@@ -98,9 +98,9 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'drill-series-3-brandix-ksr4590pqs-1500-watts',
-        name: 'Drill Series 3 Brandix KSR4590PQS 1500 Watts',
-        price: 949,
+        slug: 'Cleanliness',
+        name: 'Cleanliness',
+        price: 149,
         compareAtPrice: 1189,
         images: [
             'assets/images/products/product-4.jpg',
@@ -109,7 +109,7 @@ const productsDef: ProductDef[] = [
         badges: 'sale',
         rating: 3,
         reviews: 15,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'brandix',
         categories: [],
         attributes: [
@@ -119,16 +119,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-router-power-tool-2017erxpk',
-        name: 'Brandix Router Power Tool 2017ERXPK',
-        price: 1700,
+        slug: 'Cleanliness',
+        name: 'Cleanliness',
+        price: 100,
         images: [
             'assets/images/products/product-5.jpg',
             'assets/images/products/product-5-1.jpg',
         ],
         rating: 4,
         reviews: 2,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'wakita',
         categories: [],
         attributes: [
@@ -141,16 +141,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-drilling-machine-dm2019kw4-4kw',
-        name: 'Brandix Drilling Machine DM2019KW4 4kW',
-        price: 3199,
+        slug: 'Cleanliness',
+        name: 'Cleanliness',
+        price: 199,
         images: [
             'assets/images/products/product-6.jpg',
             'assets/images/products/product-6-1.jpg',
         ],
         rating: 3,
         reviews: 21,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'wakita',
         categories: [],
         attributes: [
@@ -163,16 +163,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-pliers',
-        name: 'Brandix Pliers',
-        price: 24,
+        slug: 'Gardener',
+        name: 'Gardener',
+        price: 240,
         images: [
             'assets/images/products/product-7.jpg',
             'assets/images/products/product-7-1.jpg',
         ],
         rating: 2,
         reviews: 1,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'wevalt',
         categories: [],
         attributes: [
@@ -185,16 +185,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'water-hose-40cm',
-        name: 'Water Hose 40cm',
-        price: 15,
+        slug: 'Gardener',
+        name: 'Gardener',
+        price: 150,
         images: [
             'assets/images/products/product-8.jpg',
             'assets/images/products/product-8-1.jpg',
         ],
         rating: 2,
         reviews: 5,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'hammer',
         categories: [],
         attributes: [
@@ -207,16 +207,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'spanner-wrench',
-        name: 'Spanner Wrench',
-        price: 19,
+        slug: 'Gardener',
+        name: 'Gardener',
+        price: 119,
         images: [
             'assets/images/products/product-9.jpg',
             'assets/images/products/product-9-1.jpg',
         ],
         rating: 4,
         reviews: 34,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'hammer',
         categories: [],
         attributes: [
@@ -229,16 +229,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'water-tap',
-        name: 'Water Tap',
-        price: 15,
+        slug: "Plumbers",
+        name: 'Plumbers',
+        price: 150,
         images: [
             'assets/images/products/product-10.jpg',
             'assets/images/products/product-10-1.jpg',
         ],
         rating: 5,
         reviews: 3,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'hammer',
         categories: [],
         attributes: [
@@ -251,8 +251,8 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'hand-tool-kit',
-        name: 'Hand Tool Kit',
+        slug: 'Plumbers',
+        name: 'Plumbers',
         price: 149,
         images: [
             'assets/images/products/product-11.jpg',
@@ -260,7 +260,7 @@ const productsDef: ProductDef[] = [
         ],
         rating: 4,
         reviews: 7,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'hammer',
         categories: [],
         attributes: [
@@ -273,16 +273,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'ash-s-chainsaw-3.5kw',
-        name: 'Ash\'s Chainsaw 3.5kW',
-        price: 666.99,
+        slug: 'electrical',
+        name: 'electrical',
+        price: 190,
         images: [
             'assets/images/products/product-12.jpg',
             'assets/images/products/product-12-1.jpg',
         ],
         rating: 5,
         reviews: 17,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'mitasia',
         categories: [],
         attributes: [
@@ -295,16 +295,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-angle-grinder-kzx3890pqw',
-        name: 'Brandix Angle Grinder KZX3890PQW',
-        price: 649,
+        slug: 'electrical',
+        name: 'electrical',
+        price: 180,
         images: [
             'assets/images/products/product-13.jpg',
             'assets/images/products/product-13-1.jpg',
         ],
         rating: 2,
         reviews: 8,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'mitasia',
         categories: [],
         attributes: [
@@ -317,16 +317,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-air-compressor-deltakx500',
-        name: 'Brandix Air Compressor DELTAKX500',
-        price: 1800,
+        slug: 'Blacksmith',
+        name: 'Blacksmith',
+        price: 200,
         images: [
             'assets/images/products/product-14.jpg',
             'assets/images/products/product-14-1.jpg',
         ],
         rating: 3,
         reviews: 14,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'brandix',
         categories: [],
         attributes: [
@@ -339,16 +339,16 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-electric-jigsaw-jig7000bq',
-        name: 'Brandix Electric Jigsaw JIG7000BQ',
-        price: 290,
+        slug: 'Blacksmith',
+        name: 'Blacksmith',
+        price: 230,
         images: [
             'assets/images/products/product-15.jpg',
             'assets/images/products/product-15-1.jpg',
         ],
         rating: 2,
         reviews: 1,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'brandix',
         categories: [],
         attributes: [
@@ -361,9 +361,9 @@ const productsDef: ProductDef[] = [
         ],
     },
     {
-        slug: 'brandix-screwdriver-screw1500acc',
-        name: 'Brandix Screwdriver SCREW1500ACC',
-        price: 1499,
+        slug: 'Carpenter',
+        name: 'Carpenter',
+        price: 170,
         images: [
             'assets/images/products/product-16.jpg',
             'assets/images/products/product-16-1.jpg',
@@ -373,7 +373,7 @@ const productsDef: ProductDef[] = [
         ],
         rating: 5,
         reviews: 3,
-        availability: 'in-stock',
+        availability: 'Available',
         brand: 'metaggo',
         categories: [],
         attributes: [
