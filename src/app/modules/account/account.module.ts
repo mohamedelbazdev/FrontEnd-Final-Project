@@ -35,7 +35,8 @@ import { PageOrderDetailsComponent } from './pages/page-order-details/page-order
         CommonModule,
         // modules
         AccountRoutingModule,
-        SharedModule
+        SharedModule,
+        
     ]
 })
 export class AccountModule { }
