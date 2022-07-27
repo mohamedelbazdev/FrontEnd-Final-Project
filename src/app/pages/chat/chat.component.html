@@ -1,34 +1,45 @@
-<div class="container border shadow p-3 my-5">
-    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-        <div
-            class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"
-        >
-            <input
-                class="fs-5 fw-semibold"
-                type="text"
-                [(ngModel)]="username"
-            />
+<div class="container my-5 shadow">
+    <div class="row">
+        <div class="col-md-4">
+            <app-chat-room></app-chat-room>
         </div>
-        <div class="list-group list-group-flush border-bottom scrollarea">
+        <div class="col-md-8">
             <div
-                class="list-group-item list-group-item-action py-3 lh-tight"
-                *ngFor="let msg of messages"
+                class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white"
             >
                 <div
-                    class="d-flex w-100 align-items-center justify-content-between"
+                    class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"
                 >
-                    <strong class="mb-1">{{msg.username}</strong>
+                    <input
+                        class="fs-5 fw-semibold"
+                        type="text"
+                        [(ngModel)]="username"
+                    />
                 </div>
-                <div class="col-10 mb-1 small">{{msg.message}</div>
+                <div
+                    class="list-group list-group-flush border-bottom scrollarea"
+                >
+                    <div
+                        class="list-group-item list-group-item-action py-3 lh-tight"
+                        *ngFor="let msg of messages"
+                    >
+                        <div
+                            class="d-flex w-100 align-items-center justify-content-between"
+                        >
+                            <strong class="mb-1">{{msg.username}</strong>
+                        </div>
+                        <div class="col-10 mb-1 small">{{msg.message}</div>
+                    </div>
+                </div>
             </div>
+            <form>
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Write a message"
+                    [value]="message"
+                />
+            </form>
         </div>
     </div>
-    <form>
-        <input
-            class="form-control"
-            type="text"
-            placeholder="Write a message"
-            [value]="message"
-        />
-    </form>
 </div>

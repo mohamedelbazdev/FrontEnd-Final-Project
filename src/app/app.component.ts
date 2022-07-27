@@ -7,6 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { isPlatformBrowser, ViewportScroller } from '@angular/common';
 import { CurrencyService } from './shared/services/currency.service';
 import { filter, first } from 'rxjs/operators';
+import { ChatAdapter } from 'ng-chat';
 
 @Component({
     selector: 'app-root',
