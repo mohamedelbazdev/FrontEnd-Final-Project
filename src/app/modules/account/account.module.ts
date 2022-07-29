@@ -17,6 +17,7 @@ import { PageOrdersListComponent } from './pages/page-orders-list/page-orders-li
 import { PagePasswordComponent } from './pages/page-password/page-password.component';
 import { PageProfileComponent } from './pages/page-profile/page-profile.component';
 import { PageOrderDetailsComponent } from './pages/page-order-details/page-order-details.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { PageOrderDetailsComponent } from './pages/page-order-details/page-order
         // modules
         AccountRoutingModule,
         SharedModule,
-        
+        ReactiveFormsModule,
+
     ]
 })
 export class AccountModule { }

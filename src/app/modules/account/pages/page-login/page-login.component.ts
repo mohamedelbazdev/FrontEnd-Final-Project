@@ -7,20 +7,33 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
     styleUrls: ['./page-login.component.scss']
 })
 export class PageLoginComponent {
-    form: FormGroup;
-    constructor(private readonly fb: FormBuilder) {
-      this.form = this.fb.group({
-        username: ['', Validators.required],
-        password: ['', [Validators.required, this.validatorPassword]]
-      });
+    loginForm: FormGroup;
+    registerForm: FormGroup;
+    constructor() {
+        this.loginForm = new FormGroup({
+            email: new FormControl('', [Validators.required, Validators.email]),
+            password: new FormControl('', [Validators.required])
+        });
+        this.registerForm = new FormGroup({
+            name: new FormControl('', [Validators.required, Validators.email]),
+            email: new FormControl('', [Validators.required, Validators.email]),
+            password: new FormControl('', [Validators.required]),
+            confirmedPassword: new FormControl('', [Validators.required]),
+        });
     }
 
-    submitForm() {
-      console.log(this.form.getRawValue());
+    onSubmit() {
+        if(this.loginForm.valid) {
+            console.log(this._v());
+        }
     }
 
-    validatorPassword(fc: FormControl) {
-      const value = fc.value as string;
-      const isInvalid = 'password' === value.trim().toLowerCase();
-      return isInvalid ? { passwordError: 'Password is not a strong password'} : null;
-    }}
+    register(){
+        // if(this.registerForm.valid) {
+            console.log(this.registerForm.value);
+        // }
+    }
+    _v() {
+        return this.loginForm.value;
+    }
+}
