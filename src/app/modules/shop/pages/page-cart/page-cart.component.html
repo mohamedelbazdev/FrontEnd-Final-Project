@@ -20,7 +20,7 @@
             <thead class="cart-table__head">
             <tr class="cart-table__row">
                 <th class="cart-table__column cart-table__column--image">Image</th>
-                <th class="cart-table__column cart-table__column--product">Product</th>
+                <th class="cart-table__column cart-table__column--product">brovider</th>
                 <th class="cart-table__column cart-table__column--price"> Price in hour</th>
                 <th class="cart-table__column cart-table__column--quantity">working hours</th>
                 <th class="cart-table__column cart-table__column--total">Total</th>
@@ -63,7 +63,7 @@
                 <button type="submit" class="btn btn-primary">Apply Coupon</button>
             </form> -->
             <div class="cart__buttons">
-                <a routerLink="/" class="btn btn-light">Continue Shopping</a>
+                <a routerLink="/" class="btn btn-light">Continue searching for providers</a>
                 <button type="button" class="btn btn-primary cart__update-button" (click)="update()" [ngClass]="{'btn-loading': updating}" [disabled]="!needUpdate()">Update Price</button>
             </div>
         </div>

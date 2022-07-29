@@ -10,14 +10,14 @@
                 <div class="card flex-grow-1 mb-md-0">
                     <div class="card-body">
                         <h3 class="card-title">Login</h3>
-                        <form>
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
                             <div class="form-group">
                                 <label>Email address</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
+                                <input type="email" class="form-control"  formControlName="email" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" class="form-control"  formControlName="password" placeholder="Password">
                                 <small class="form-text text-muted">
                                     <a href="">Forgotten Password</a>
                                 </small>
@@ -43,22 +43,22 @@
                 <div class="card flex-grow-1 mb-0">
                     <div class="card-body">
                         <h3 class="card-title">Register</h3>
-                        <form>
+                        <form [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
                             <div class="form-group">
                                 <label>Email address</label>
-                                <input type="email" class="form-control" placeholder="Enter email">
+                                <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" class="form-control"  formControlName="password"placeholder="Password">
                             </div>
                             <div class="form-group">
                                 <label>Repeat Password</label>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" class="form-control" formControlName="confirmedPassword" placeholder="Password">
                             </div>
                             <div class="form-group">
                                 <label>Enter Your Image</label>
-                                <input type="file" class="form-control" placeholder="your Image">
+                                <input type="file" class="form-control"  formControlName="image" placeholder="your Image">
                             </div>
 
 
