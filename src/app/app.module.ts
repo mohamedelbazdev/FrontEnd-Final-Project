@@ -8,6 +8,7 @@ import { /*LOCALE_ID, */NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { NgChatModule } from 'ng-chat';
 
 // modules (third-party)
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -30,6 +31,7 @@ import { RootComponent } from './components/root/root.component';
 import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { ChatRoomComponent } from './pages/chat-room/chat-room.component';
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { ChatComponent } from './pages/chat/chat.component';
         // pages
         PageHomeOneComponent,
         PageNotFoundComponent,
-        ChatComponent
+        ChatComponent,
+        ChatRoomComponent
     ],
     imports: [
         // modules (angular)
@@ -59,6 +62,8 @@ import { ChatComponent } from './pages/chat/chat.component';
         MobileModule,
         SharedModule,
         WidgetsModule,
+        // NgChatModule
+
 
     ],
     providers: [

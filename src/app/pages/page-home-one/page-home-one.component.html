@@ -2,20 +2,23 @@
 
 <app-block-features></app-block-features>
 
-<app-block-products-carousel
+<!-- <app-block-products-carousel
     header="Featured Provider"
     layout="grid-4"
     [loading]="featuredProvider.loading"
     [products]="featuredProvider.products"
     [groups]="featuredProvider.groups"
     (groupChange)="groupChange(featuredProvider, $event)"
-></app-block-products-carousel>
+></app-block-products-carousel> -->
 
+<app-block-categories
+    header="Popular Categories"
+    layout="classic"
+    [categories]="(popularCategories$ | async) || []"
+></app-block-categories>
 <app-block-banner></app-block-banner>
 
 <!-- <app-block-products header="Bestsellers" layout="large-first" [products]="(bestsellers$|async) || []"></app-block-products> -->
-
-<app-block-categories header="Popular Categories" layout="classic" [categories]="(popularCategories$|async) || []"></app-block-categories>
 
 <!-- <app-block-products-carousel
     header="New Arrivals"

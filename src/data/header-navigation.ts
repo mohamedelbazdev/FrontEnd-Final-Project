@@ -11,46 +11,46 @@ export const navigation: NavigationLink[] = [
     {label: 'Chat', url: '/chat',
     },
 
-    {label: 'Megamenu', url: '/shop/catalog', menu: {
-        type: 'megamenu',
-        size: 'nl',
-        columns: [
-            {size: 6, items: [
-                {label: 'Electricity', url: '/shop/catalog', items: [
-                    {label: 'Engravers', url: '/shop/catalog'},
-                    {label: 'Wrenches', url: '/shop/catalog'},
-                    {label: 'Wall Chaser', url: '/shop/catalog'},
-                    {label: 'Pneumatic Tools', url: '/shop/catalog'}
-                ]},
-                {label: 'Machine Tools', url: '/shop/catalog', items: [
-                    {label: 'Thread Cutting', url: '/shop/catalog'},
-                    {label: 'Chip Blowers', url: '/shop/catalog'},
-                    {label: 'Sharpening Machines', url: '/shop/catalog'},
-                    {label: 'Pipe Cutters', url: '/shop/catalog'},
-                    {label: 'Slotting machines', url: '/shop/catalog'},
-                    {label: 'Lathes', url: '/shop/catalog'}
-                ]}
-            ]},
-            {size: 6, items: [
-                {label: 'Carpenters', url: '/shop/catalog', items: [
-                    {label: 'Screwdrivers', url: '/shop/catalog'},
-                    {label: 'Handsaws', url: '/shop/catalog'},
-                    {label: 'Knives', url: '/shop/catalog'},
-                    {label: 'Axes', url: '/shop/catalog'},
-                    {label: 'Multitools', url: '/shop/catalog'},
-                    {label: 'Paint Tools', url: '/shop/catalog'}
-                ]},
-                {label: 'Garden Equipment', url: '/shop/catalog', items: [
-                    {label: 'Motor Pumps', url: '/shop/catalog'},
-                    {label: 'Chainsaws', url: '/shop/catalog'},
-                    {label: 'Electric Saws', url: '/shop/catalog'},
-                    {label: 'Brush Cutters', url: '/shop/catalog'}
-                ]}
-            ]}
-        ]
-    }},
-    {label: 'Shop', url: '/shop/catalog/electricity'},
-    //  menu: {
+
+    // {label: 'Megamenu', url: '/shop/catalog', menu: {
+    //     type: 'megamenu',
+    //     size: 'nl',
+    //     columns: [
+    //         {size: 6, items: [
+    //             {label: 'Electricity', url: '/shop/catalog', items: [
+    //                 {label: 'Engravers', url: '/shop/catalog'},
+    //                 {label: 'Wrenches', url: '/shop/catalog'},
+    //                 {label: 'Wall Chaser', url: '/shop/catalog'},
+    //                 {label: 'Pneumatic Tools', url: '/shop/catalog'}
+    //             ]},
+    //             {label: 'Machine Tools', url: '/shop/catalog', items: [
+    //                 {label: 'Thread Cutting', url: '/shop/catalog'},
+    //                 {label: 'Chip Blowers', url: '/shop/catalog'},
+    //                 {label: 'Sharpening Machines', url: '/shop/catalog'},
+    //                 {label: 'Pipe Cutters', url: '/shop/catalog'},
+    //                 {label: 'Slotting machines', url: '/shop/catalog'},
+    //                 {label: 'Lathes', url: '/shop/catalog'}
+    //             ]}
+    //         ]},
+    //         {size: 6, items: [
+    //             {label: 'Carpenters', url: '/shop/catalog', items: [
+    //                 {label: 'Screwdrivers', url: '/shop/catalog'},
+    //                 {label: 'Handsaws', url: '/shop/catalog'},
+    //                 {label: 'Knives', url: '/shop/catalog'},
+    //                 {label: 'Axes', url: '/shop/catalog'},
+    //                 {label: 'Multitools', url: '/shop/catalog'},
+    //                 {label: 'Paint Tools', url: '/shop/catalog'}
+    //             ]},
+    //             {label: 'Garden Equipment', url: '/shop/catalog', items: [
+    //                 {label: 'Motor Pumps', url: '/shop/catalog'},
+    //                 {label: 'Chainsaws', url: '/shop/catalog'},
+    //                 {label: 'Electric Saws', url: '/shop/catalog'},
+    //                 {label: 'Brush Cutters', url: '/shop/catalog'}
+    //             ]}
+    //         ]}
+    //     ]
+    // }},
+    // {label: 'Shop', url: '/shop/catalog/electricity', menu: {
     //     type: 'menu',
     //     items: [
     //         {label: 'Shop Grid', url: '/shop/catalog/electricity', items: [
@@ -73,6 +73,7 @@ export const navigation: NavigationLink[] = [
     //         {label: 'Track Order', url: '/shop/track-order'},
     //     ]
     // }},
+
     {label: 'Account', url: '/account/login'},
     //  menu: {
     //     type: 'menu',
@@ -87,7 +88,22 @@ export const navigation: NavigationLink[] = [
     //         {label: 'Change Password', url: '/account/password'}
     //     ]
     // }},
-    {label: 'Blog', url: '/blog'},
+    // {label: 'Blog', url: '/blog'},
+
+    {label: 'Account', url: '/account', menu: {
+        type: 'menu',
+        items: [
+            {label: 'Login',           url: '/account/login'},
+            {label: 'Dashboard',       url: '/account/dashboard'},
+            {label: 'Edit Profile',    url: '/account/profile'},
+            {label: 'Order History',   url: '/account/orders'},
+            {label: 'Order Details',   url: '/account/orders/5'},
+            {label: 'Address Book',    url: '/account/addresses'},
+            {label: 'Edit Address',    url: '/account/addresses/5'},
+            {label: 'Change Password', url: '/account/password'}
+        ]
+    }},
+
     //  menu: {
     //     type: 'menu',
     //     items: [
@@ -99,17 +115,15 @@ export const navigation: NavigationLink[] = [
     //         {label: 'Post Without Sidebar', url: '/blog/post-full'}
     //     ]
     // }},
-    {label: 'Pages', url: '/site', menu: {
-        type: 'menu',
-        items: [
-            {label: 'About Us',             url: '/site/about-us'},
-            {label: 'Contact Us',           url: '/site/contact-us'},
-            // {label: '404',                  url: '/site/not-found'},
-            {label: 'Terms And Conditions', url: '/site/terms'},
-            {label: 'FAQ',                  url: '/site/faq'},
-            {label: 'Components',           url: '/site/components'},
-        ]
-    }},
-    // {label: 'Buy Theme', url: 'https://themeforest.net/item/stroyka-tools-store-angular-7-template/23523630', external: true}
-
+    // {label: 'Pages', url: '/site', menu: {
+    //     type: 'menu',
+    //     items: [
+    //         {label: 'About Us',             url: '/site/about-us'},
+    //         {label: 'Contact Us',           url: '/site/contact-us'},
+    //         {label: '404',                  url: '/site/not-found'},
+    //         {label: 'Terms And Conditions', url: '/site/terms'},
+    //         {label: 'FAQ',                  url: '/site/faq'},
+    //         {label: 'Components',           url: '/site/components'},
+    //     ]
+    // }},
 ];
