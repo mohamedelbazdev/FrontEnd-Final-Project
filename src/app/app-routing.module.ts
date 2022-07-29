@@ -4,6 +4,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.component';
 import { RootComponent } from './components/root/root.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
@@ -23,12 +24,12 @@ const routes: Routes = [
             {
                 path: '',
                 pathMatch: 'full',
-                component: PageHomeOneComponent
+                component: PageHomeOneComponent, 
             },
             {
                 path: 'chat',
                 pathMatch: 'full',
-                component: ChatComponent
+                component: ChatComponent, canActivate:[AuthGuard]
             },
             {
                 path: 'shop',
@@ -36,11 +37,11 @@ const routes: Routes = [
             },
             {
                 path: 'blog',
-                loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
+                loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule), canActivate:[AuthGuard]
             },
             {
                 path: 'account',
-                loadChildren: () => import('./modules/account/account.module').then(m => m.AccountModule)
+                loadChildren: () => import('./modules/account/account.module').then(m => m.AccountModule) ,canActivate:[AuthGuard]
             },
             {
                 path: 'site',
