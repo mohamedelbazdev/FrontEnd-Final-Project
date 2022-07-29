@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-import { Injectable } from '@angular/core';
-=======
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from 'express';
->>>>>>> 595c54e28ee859b7655e69bac573b77d4e111df3
 
 @Injectable({
   providedIn: 'root'
 })
-<<<<<<< HEAD
-export class AuthService {
-
-  constructor() { }
-=======
-
-@Injectable()
 export class AuthService {
 
   private _registerUrl = "http://127.0.0.1:8000/api/providers/register";
@@ -44,5 +34,4 @@ export class AuthService {
   loggedIn() {
     return !!localStorage.getItem('token')
   }
->>>>>>> 595c54e28ee859b7655e69bac573b77d4e111df3
 }
