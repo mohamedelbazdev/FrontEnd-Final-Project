@@ -29,11 +29,11 @@ export class PageLoginComponent {
     onSubmit() {
         if(this.loginForm.valid) {
             this.http.post('http://127.0.0.1:8000/api/auth/login', this._v()).subscribe(
-                next: (result:any) => {
-                    localStorage.setItem('token', result.access_token);
-                    this.router.navigate('/account');
-                 },
-                 error:error =>
+                // next: (result:any) => {
+                //     localStorage.setItem('token', result.access_token);
+                //     this.router.navigate('/account');
+                //  },
+                //  error:error =>
             )
             console.log(this._v());
         }

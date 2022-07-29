@@ -8,7 +8,7 @@
     <div class="products-view__loader"></div>
 
     <div *ngIf="pageService.items?.length" class="products-view__content">
-        <!-- <div class="products-view__options">
+        <div class="products-view__options">
             <div
                 class="view-options"
                 [ngClass]="{
@@ -16,7 +16,7 @@
                     'view-options--offcanvas--mobile': offcanvas === 'mobile'
                 }"
             >
-                <!-- <div class="view-options__filters-button">
+                <div class="view-options__filters-button">
                     <button
                         type="button"
                         class="filters-button"
@@ -34,8 +34,8 @@
                             >{{ filtersCount }}</span
                         >
                     </button>
-                </div> -->
-                <!-- <div class="view-options__layout">
+                </div>
+                <div class="view-options__layout">
                     <div class="layout-switcher">
                         <div class="layout-switcher__list">
                             <button
@@ -85,16 +85,16 @@
                             </button>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div class="view-options__legend">
+                </div>
+                <div class="view-options__legend">
                     Showing {{ this.pageService.from }}–{{
                         this.pageService.to
                     }}
                     of {{ this.pageService.total }}
                     results
-                </div> -->
-                <!-- <div class="view-options__divider"></div> -->
-                <!-- <div class="view-options__control">
+                </div>
+                <div class="view-options__divider"></div>
+                <div class="view-options__control">
                     <label for="view-options-sort">Sort By</label>
                     <div>
                         <select
@@ -107,8 +107,8 @@
                             <option value="name_desc">Name (Z-A)</option>
                         </select>
                     </div>
-                </div> -->
-                <!-- <div class="view-options__control">
+                </div>
+                <div class="view-options__control">
                     <label for="view-options-limit">Show</label>
                     <div>
                         <select
@@ -120,7 +120,7 @@
                             <option value="24">24</option>
                         </select>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -147,7 +147,7 @@
                 [siblings]="2"
                 [total]="pageService.pages"
             ></app-pagination>
-        </div> -->
+        </div>
     </div>
 
     <div *ngIf="!pageService.items?.length" class="products-view__empty">
