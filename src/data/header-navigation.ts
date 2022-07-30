@@ -121,9 +121,7 @@ export const navigation: NavigationLink[] = [
             {label: 'About Us',             url: '/site/about-us'},
             {label: 'Contact Us',           url: '/site/contact-us'},
             {label: '404',                  url: '/site/not-found'},
-            {label: 'Terms And Conditions', url: '/site/terms'},
             {label: 'FAQ',                  url: '/site/faq'},
-            {label: 'Components',           url: '/site/components'},
         ]
     }},
 ];
