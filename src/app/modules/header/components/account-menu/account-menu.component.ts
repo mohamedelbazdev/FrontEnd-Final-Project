@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import {AuthService} from "../../../account/auth.service";
 
 @Component({
     selector: 'app-account-menu',
@@ -8,5 +9,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class AccountMenuComponent {
     @Output() closeMenu: EventEmitter<void> = new EventEmitter<void>();
 
-    constructor() { }
+    constructor(private auth: AuthService) { }
+
+    logout(){
+        this.auth.logoutUser()
+    }
+
+    isLogin():boolean{
+       return this.auth.loggedIn()
+    }
 }

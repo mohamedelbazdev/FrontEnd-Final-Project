@@ -1,7 +1,5 @@
-// import { HttpClient } from '@angular/common/http';
 import {Component} from '@angular/core';
 import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
-// import { Router } from '@angular/router';
 import {Router} from "@angular/router";
 import {AuthService} from "../../auth.service";
 
@@ -16,7 +14,7 @@ export class PageLoginComponent{
 
     constructor
     (
-        private fb: FormBuilder,
+        // private fb: FormBuilder,
         private router: Router,
         private auth: AuthService
     )
@@ -33,7 +31,6 @@ export class PageLoginComponent{
             confirmedPassword: new FormControl('', [Validators.required]),
         });
     }
-
 
     onSubmit() {
         if(this.loginForm.valid) {
@@ -60,13 +57,10 @@ export class PageLoginComponent{
         // }
     }
 
-
     _v() {
         return this.loginForm.value;
     }
 }
-
-
 
 // submit(){
 
