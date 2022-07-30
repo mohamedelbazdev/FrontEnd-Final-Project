@@ -4,7 +4,7 @@ import { Brand } from '../../shared/interfaces/brand';
 import { Observable, Subject, merge } from 'rxjs';
 import { ShopService } from '../../shared/api/shop.service';
 import { Product } from '../../shared/interfaces/product';
-import { Category } from '../../shared/interfaces/category';
+// import { Category } from '../../shared/interfaces/category';
 import { BlockHeaderGroup } from '../../shared/interfaces/block-header-group';
 import { takeUntil, tap } from 'rxjs/operators';
 import {HomeService} from "../../shared/api/home.service";
@@ -25,6 +25,7 @@ interface ProductsCarouselData {
     templateUrl: './page-home-one.component.html',
     styleUrls: ['./page-home-one.component.scss']
 })
+
 export class PageHomeOneComponent implements OnInit, OnDestroy {
     destroy$: Subject<void> = new Subject<void>();
     bestsellers$!: Observable<Product[]>;
@@ -38,7 +39,8 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
 
     posts = posts;
 
-    featuredProvider!: ProductsCarouselData;
+    // featuredProvider!: ProductsCarouselData;
+    featuredProvider!: any[];
     latestProducts!: ProductsCarouselData;
 
     constructor(
@@ -53,6 +55,12 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
             this.popularCategories = res.data
             console.log(res.data)
         })
+
+        this.home.getProviders().subscribe(res => {
+            this.featuredProvider = res.data
+            console.log(res.data)
+        })
+
         // this.popularCategories$ = this.shop.getCategoriesBySlug([
         //     'electricity',
         //     'Carpenters',
@@ -65,34 +73,34 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
         this.columnSpecialOffers$ = this.shop.getSpecialOffers(3);
         this.columnBestsellers$ = this.shop.getBestsellers(3);
 
-        this.featuredProvider = {
-            abort$: new Subject<void>(),
-            loading: false,
-            products: [],
-            groups: [
-                {
-                    name: 'All',
-                    current: true,
-                    products$: this.shop.getfeaturedProvider(null, 8),
-                },
-                {
-                    name: 'Electricity',
-                    current: false,
-                    products$: this.shop.getfeaturedProvider('electricity', 8),
-                },
-                {
-                    name: 'Carpenters',
-                    current: false,
-                    products$: this.shop.getfeaturedProvider('Carpenters', 8),
-                },
-                {
-                    name: 'Plumbing',
-                    current: false,
-                    products$: this.shop.getfeaturedProvider('plumbing', 8),
-                },
-            ],
-        };
-        this.groupChange(this.featuredProvider, this.featuredProvider.groups[0]);
+        // this.featuredProvider = {
+        //     abort$: new Subject<void>(),
+        //     loading: false,
+        //     products: [],
+        //     groups: [
+        //         {
+        //             name: 'All',
+        //             current: true,
+        //             products$: this.shop.getfeaturedProvider(null, 8),
+        //         },
+        //         {
+        //             name: 'Electricity',
+        //             current: false,
+        //             products$: this.shop.getfeaturedProvider('electricity', 8),
+        //         },
+        //         {
+        //             name: 'Carpenters',
+        //             current: false,
+        //             products$: this.shop.getfeaturedProvider('Carpenters', 8),
+        //         },
+        //         {
+        //             name: 'Plumbing',
+        //             current: false,
+        //             products$: this.shop.getfeaturedProvider('plumbing', 8),
+        //         },
+        //     ],
+        // };
+        // this.groupChange(this.featuredProvider, this.featuredProvider.groups[0]);
 
         this.latestProducts = {
             abort$: new Subject<void>(),
