@@ -6,9 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
-    constructor(private _Router:Router){
-
-    }
+    constructor(private _Router:Router){}
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -19,9 +17,8 @@ export class AuthGuard implements CanActivate {
             return true;
         }
         else{
-            this._Router.navigateByUrl('/login')
+            this._Router.navigateByUrl('/account/login')
             return false
         }
-
-}
+    }
 }

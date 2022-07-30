@@ -38,7 +38,6 @@ import {ReactiveFormsModule} from "@angular/forms";
         AccountRoutingModule,
         SharedModule,
         ReactiveFormsModule,
-
     ]
 })
 export class AccountModule { }
