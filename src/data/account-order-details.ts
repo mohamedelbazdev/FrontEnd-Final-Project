@@ -7,19 +7,10 @@ export const order: Order = {
     items: [
         {
             id: 1,
-            slug: 'electric-planer-brandix-kl370090g-300-watts',
-            name: 'Electric Planer Brandix KL370090G 300 Watts',
-            image: 'assets/images/products/product-1.jpg',
-            options: [
-                {
-                    label: 'Color',
-                    value: 'Yellow',
-                },
-                {
-                    label: 'Material',
-                    value: 'Aluminium',
-                },
-            ],
+            slug: 'electric-planer',
+            name: 'Electric Planer ',
+            image: 'assets/images/products/product-1.PNG',
+
             price: 699,
             quantity: 2,
             total: 1398,
@@ -35,9 +26,9 @@ export const order: Order = {
         },
         {
             id: 5,
-            slug: 'brandix-router-power-tool-2017erxpk',
-            name: 'Brandix Router Power Tool 2017ERXPK',
-            image: 'assets/images/products/product-5.jpg',
+            slug: 'router-power-tool-',
+            name: 'Router Power Tool',
+            image: 'assets/images/products/product-5.PNG',
             options: [
                 {
                     label: 'Color',
@@ -64,21 +55,21 @@ export const order: Order = {
     total: 5882,
     paymentMethod: 'PayPal',
     shippingAddress: {
-        firstName: 'Helena',
-        lastName: 'Garcia',
+        firstName: 'Mohmmed',
+        lastName: 'Ahmed',
         email: ' GroupOne@iti.com',
         phone: '01100000000',
-        country: 'Random Federation',
-        city: 'Moscow',
-        address: 'ul. Varshavskaya, 15-2-178'
+        country: 'Cairo',
+        city: 'EL Shourk',
+        address: 'st , El Tahrir'
     },
     billingAddress: {
-        firstName: 'Jupiter',
-        lastName: 'Saturnov',
+        firstName: 'Omar',
+        lastName: 'Ibrahim',
         email: 'GroupOne@iti.com',
-        phone: 'ZX 971 972-57-26',
-        country: 'RandomLand',
-        city: 'MarsGrad',
-        address: 'Sun Orbit, 43.3241-85.239'
+        phone: '0100 012 015 011',
+        country: 'Sohag',
+        city: 'Juhayna',
+        address: 'St, El Araby'
     },
 };

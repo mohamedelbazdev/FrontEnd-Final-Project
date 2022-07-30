@@ -164,10 +164,10 @@ export class ShopService {
         /**
          * This is what your API endpoint might look like:
          *
-         * https://example.com/api/products/electric-planer-brandix-kl370090g-300-watts.json
+         * https://example.com/api/products/electric-planer.json
          *
          * where:
-         * - electric-planer-brandix-kl370090g-300-watts = productSlug
+         * - electric-planer = productSlug
          */
         // return this.http.get<Product>(`https://example.com/api/products/${productSlug}.json`);
 

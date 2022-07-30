@@ -20,7 +20,7 @@ export const reviews: Review[] = [
     },
     {
         avatar: 'assets/images/avatars/avatar-3.jpg',
-        author: 'Helena Garcia',
+        author: 'Mohmmed Ahmed',
         rating: 5,
         date: '2 January, 2018',
         text: 'Duis ac lectus scelerisque quam blandit egestas. Pellentesque hendrerit eros laoreet suscipit ultrices.'
