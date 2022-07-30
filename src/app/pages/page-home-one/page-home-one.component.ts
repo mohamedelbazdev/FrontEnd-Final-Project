@@ -7,6 +7,7 @@ import { Product } from '../../shared/interfaces/product';
 import { Category } from '../../shared/interfaces/category';
 import { BlockHeaderGroup } from '../../shared/interfaces/block-header-group';
 import { takeUntil, tap } from 'rxjs/operators';
+import {HomeService} from "../../shared/api/home.service";
 
 interface ProductsCarouselGroup extends BlockHeaderGroup {
     products$: Observable<Product[]>;
@@ -28,7 +29,8 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
     destroy$: Subject<void> = new Subject<void>();
     bestsellers$!: Observable<Product[]>;
     brands$!: Observable<Brand[]>;
-    popularCategories$!: Observable<Category[]>;
+    popularCategories!: any[];
+    // popularCategories$!: Observable<Category[]>;
 
     columnTopRated$!: Observable<Product[]>;
     columnSpecialOffers$!: Observable<Product[]>;
@@ -41,19 +43,24 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
 
     constructor(
         private shop: ShopService,
+        private home: HomeService
     ) { }
 
     ngOnInit(): void {
         this.bestsellers$ = this.shop.getBestsellers(7);
         this.brands$ = this.shop.getPopularBrands();
-        this.popularCategories$ = this.shop.getCategoriesBySlug([
-            'electricity',
-            'Carpenters',
-            'gardener',
-            'plumbers',
-            'Cleanliness',
-            'Maintenance',
-        ], 1);
+        this.home.getCategories().subscribe(res => {
+            this.popularCategories = res.data
+            console.log(res.data)
+        })
+        // this.popularCategories$ = this.shop.getCategoriesBySlug([
+        //     'electricity',
+        //     'Carpenters',
+        //     'gardener',
+        //     'plumbers',
+        //     'Cleanliness',
+        //     'Maintenance',
+        // ], 1);
         this.columnTopRated$ = this.shop.getTopRated(3);
         this.columnSpecialOffers$ = this.shop.getSpecialOffers(3);
         this.columnBestsellers$ = this.shop.getBestsellers(3);

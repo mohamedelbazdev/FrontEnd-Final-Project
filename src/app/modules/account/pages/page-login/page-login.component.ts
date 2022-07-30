@@ -25,10 +25,12 @@ export class PageLoginComponent{
         });
 
         this.registerForm = new FormGroup({
-            name: new FormControl('', [Validators.required, Validators.email]),
+            name: new FormControl('', [Validators.required]),
             email: new FormControl('', [Validators.required, Validators.email]),
             password: new FormControl('', [Validators.required]),
             confirmedPassword: new FormControl('', [Validators.required]),
+            lat: new FormControl(1.2558, [Validators.required]),
+            lng: new FormControl(2.3666, [Validators.required]),
         });
     }
 
@@ -40,20 +42,15 @@ export class PageLoginComponent{
                 // this.router.navigate('/');
                 this.router.navigateByUrl('/')
             })
-            // this.http.post('http://127.0.0.1:8000/api/auth/login', this._v()).subscribe(
-            //     // next: (result:any) => {
-            //     //     localStorage.setItem('token', result.access_token);
-            //     //     this.router.navigate('/account');
-            //     //  },
-            //     //  error:error =>
-            // )
-            // console.log(this._v());
         }
     }
 
     register(){
         // if(this.registerForm.valid) {
-        //     console.log(this.registerForm.value);
+            this.auth.registerUser(this.registerForm.value).subscribe(res => {
+                console.log(res)
+                this.router.navigateByUrl('/')
+            })
         // }
     }
 
