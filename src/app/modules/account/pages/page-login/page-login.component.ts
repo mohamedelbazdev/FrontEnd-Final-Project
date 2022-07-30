@@ -14,7 +14,6 @@ export class PageLoginComponent{
 
     constructor
     (
-        // private fb: FormBuilder,
         private router: Router,
         private auth: AuthService
     )
@@ -46,12 +45,12 @@ export class PageLoginComponent{
     }
 
     register(){
-        // if(this.registerForm.valid) {
+        if(this.registerForm.valid) {
             this.auth.registerUser(this.registerForm.value).subscribe(res => {
                 console.log(res)
                 this.router.navigateByUrl('/')
             })
-        // }
+        }
     }
 
     _v() {
