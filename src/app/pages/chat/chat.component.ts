@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+    import { PusherService } from '../../shared/services/pusher.service';
 // import  Pusher from "pusher-js";
 
 @Component({
@@ -12,26 +13,22 @@ export class ChatComponent implements OnInit {
     username = 'username';
     messages = [];
     message = '';
-  constructor(private http: HttpClient) { }
+    conversations = [
+        {name: "David", time:"8:21", latestMessage: "Good Morning!" , latestMessageRead: false, },
+        {name: "James", time:"8:21", latestMessage: "Good Morning!" ,  latestMessageRead: true},
+        {name: "Andrew", time:"8:21", latestMessage: "Good Morning!" , latestMessageRead: false},
+        {name: "Richard", time:"8:21", latestMessage: "Good Morning!" , latestMessageRead: true},
+        {name: "Dyno", time:"8:21", latestMessage: "Good Morning!" , latestMessageRead: false},
+        {name: "Julie", time:"8:21", latestMessage: "Good Morning!" , latestMessageRead: false},
+      ]
+
+      title = 'Pusher Liker';
+      likes: any =  10;
+  constructor(private http: HttpClient,
+              private pusherService: PusherService) { }
 
   ngOnInit(): void {
-    // Enable pusher logging - don't include this in production
-    // Pusher.logToConsole = true;
 
-    // const pusher = new Pusher('10d6ae1025ceb435d335', {
-    //   cluster: 'eu'
-    // });
-
-    // const channel = pusher.subscribe('chat');
-    // channel.bind('message', data => {
-    //   this.messages.push(data);
-    // });
   }
-
-//   submit() : void {
-//     this.http.post(url:'http://localhost:4200/api/messages',body: {
-//         username:this.username,
-//         message:this.message
-//     }).subscribe(next:() => this.message = "");
-//   }
 }
+
