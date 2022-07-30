@@ -1,57 +1,62 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
+import {Router} from "@angular/router";
+import {AuthService} from "../../auth.service";
 
 @Component({
     selector: 'app-login',
     templateUrl: './page-login.component.html',
     styleUrls: ['./page-login.component.scss']
 })
-export class PageLoginComponent {
+export class PageLoginComponent{
     loginForm: FormGroup;
     registerForm: FormGroup;
-    constructor(  private fb: FormBuilder,
-                  private http: HttpClient,
-                  private router: Router) {
+
+    constructor
+    (
+        private router: Router,
+        private auth: AuthService
+    )
+    {
         this.loginForm = new FormGroup({
             email: new FormControl('', [Validators.required, Validators.email]),
             password: new FormControl('', [Validators.required])
         });
+
         this.registerForm = new FormGroup({
-            name: new FormControl('', [Validators.required, Validators.email]),
+            name: new FormControl('', [Validators.required]),
             email: new FormControl('', [Validators.required, Validators.email]),
             password: new FormControl('', [Validators.required]),
             confirmedPassword: new FormControl('', [Validators.required]),
+            lat: new FormControl(1.2558, [Validators.required]),
+            lng: new FormControl(2.3666, [Validators.required]),
         });
     }
 
     onSubmit() {
         if(this.loginForm.valid) {
-            this.http.post('http://127.0.0.1:8000/api/auth/login', this._v()).subscribe(
-                // next: (result:any) => {
-                //     localStorage.setItem('token', result.access_token);
-                //     this.router.navigate('/account');
-                //  },
-                //  error:error =>
-            )
-            console.log(this._v());
+            this.auth.loginUser(this._v()).subscribe(res => {
+                console.log(res)
+                this.auth.setToken(res.token)
+                // this.router.navigate('/');
+                this.router.navigateByUrl('/')
+            })
         }
     }
 
     register(){
-        // if(this.registerForm.valid) {
-            console.log(this.registerForm.value);
-        // }
+        if(this.registerForm.valid) {
+            this.auth.registerUser(this.registerForm.value).subscribe(res => {
+                console.log(res)
+                this.router.navigateByUrl('/')
+            })
+        }
     }
-
 
     _v() {
         return this.loginForm.value;
     }
 }
-
-
 
 // submit(){
 

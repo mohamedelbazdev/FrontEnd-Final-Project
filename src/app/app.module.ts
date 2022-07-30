@@ -32,6 +32,10 @@ import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.compon
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ChatComponent } from './pages/chat/chat.component';
 
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {HeaderInterceptor} from "./modules/account/header.interceptor";
+
+
 
 @NgModule({
     declarations: [
@@ -63,6 +67,7 @@ import { ChatComponent } from './pages/chat/chat.component';
     ],
     providers: [
         // { provide: LOCALE_ID, useValue: 'it' }
+        { provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true },  // register interceptor for project
     ],
     bootstrap: [AppComponent]
 })
