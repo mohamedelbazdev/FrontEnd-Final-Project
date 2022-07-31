@@ -65,7 +65,7 @@ export const navigation: NavigationLink[] = [
                 {label: 'Product Alt', url: '/shop/product-columnar'},
                 {label: 'Product Sidebar', url: '/shop/product-sidebar'}
             ]},
-            {label: 'Cart', url: '/shop/cart'},
+            {label: '   Booking', url: '/shop/cart'},
             {label: 'Checkout', url: '/shop/cart/checkout'},
             {label: 'Order Success', url: '/shop/cart/checkout/success'},
             {label: 'Wishlist', url: '/shop/wishlist'},
