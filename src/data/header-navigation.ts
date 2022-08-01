@@ -12,7 +12,6 @@ export const navigation: NavigationLink[] = [
     },
 
 
-<<<<<<< HEAD
     // {label: 'Megamenu', url: '/shop/catalog', menu: {
     //     type: 'megamenu',
     //     size: 'nl',
@@ -75,70 +74,6 @@ export const navigation: NavigationLink[] = [
     //     ]
     // }},
 
-=======
-    {label: 'Megamenu', url: '/shop/catalog', menu: {
-        type: 'megamenu',
-        size: 'nl',
-        columns: [
-            {size: 6, items: [
-                {label: 'Electricity', url: '/shop/catalog', items: [
-                    {label: 'Engravers', url: '/shop/catalog'},
-                    {label: 'Wrenches', url: '/shop/catalog'},
-                    {label: 'Wall Chaser', url: '/shop/catalog'},
-                    {label: 'Pneumatic Tools', url: '/shop/catalog'}
-                ]},
-                {label: 'Machine Tools', url: '/shop/catalog', items: [
-                    {label: 'Thread Cutting', url: '/shop/catalog'},
-                    {label: 'Chip Blowers', url: '/shop/catalog'},
-                    {label: 'Sharpening Machines', url: '/shop/catalog'},
-                    {label: 'Pipe Cutters', url: '/shop/catalog'},
-                    {label: 'Slotting machines', url: '/shop/catalog'},
-                    {label: 'Lathes', url: '/shop/catalog'}
-                ]}
-            ]},
-            {size: 6, items: [
-                {label: 'Carpenters', url: '/shop/catalog', items: [
-                    {label: 'Screwdrivers', url: '/shop/catalog'},
-                    {label: 'Handsaws', url: '/shop/catalog'},
-                    {label: 'Knives', url: '/shop/catalog'},
-                    {label: 'Axes', url: '/shop/catalog'},
-                    {label: 'Multitools', url: '/shop/catalog'},
-                    {label: 'Paint Tools', url: '/shop/catalog'}
-                ]},
-                {label: 'Garden Equipment', url: '/shop/catalog', items: [
-                    {label: 'Motor Pumps', url: '/shop/catalog'},
-                    {label: 'Chainsaws', url: '/shop/catalog'},
-                    {label: 'Electric Saws', url: '/shop/catalog'},
-                    {label: 'Brush Cutters', url: '/shop/catalog'}
-                ]}
-            ]}
-        ]
-    }},
-    {label: 'Shop', url: '/shop/catalog/electricity', menu: {
-        type: 'menu',
-        items: [
-            {label: 'Shop Grid', url: '/shop/catalog/electricity', items: [
-                {label: '3 Columns Sidebar', url: '/shop/catalog/electricity'},
-                {label: '4 Columns Full',    url: '/shop/category-grid-4-columns-full'},
-                {label: '5 Columns Full',    url: '/shop/category-grid-5-columns-full'}
-            ]},
-            {label: 'Shop List', url: '/shop/category-list'},
-            {label: 'Shop Right Sidebar', url: '/shop/category-right-sidebar'},
-            {label: 'Product', url: '/shop/product-standard', items: [
-                {label: 'Product', url: '/shop/product-standard'},
-                {label: 'Product Alt', url: '/shop/product-columnar'},
-                {label: 'Product Sidebar', url: '/shop/product-sidebar'}
-            ]},
-            {label: '   Booking', url: '/shop/cart'},
-            {label: 'Checkout', url: '/shop/cart/checkout'},
-            {label: 'Order Success', url: '/shop/cart/checkout/success'},
-            {label: 'Wishlist', url: '/shop/wishlist'},
-            {label: 'Compare', url: '/shop/compare'},
-            {label: 'Track Order', url: '/shop/track-order'},
-        ]
-    }},
- 
->>>>>>> 75dcb7fb3ffa71f8a2e5fdd4b4a7ec8ef8da3943
     // {label: 'Account', url: '/account/login'},
     //  menu: {
     //     type: 'menu',
