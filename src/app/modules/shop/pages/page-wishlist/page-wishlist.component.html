@@ -6,104 +6,114 @@
     ]"
 ></app-page-header>
 
-<div class="block block-empty" *ngIf="!(wishlist.items$ | async)?.length">
-    <div class="container">
-        <div class="block-empty__body">
-            <div class="block-empty__message">Your wish list is empty!</div>
-            <div class="block-empty__actions">
-                <a routerLink="/" class="btn btn-primary btn-sm">Continue</a>
-            </div>
+<!-- <div
+    class="conversation"
+    *ngFor="let fav of featuredfavorites"
+>
+    <div class="content">
+        <div class="conversationHeader">
+            <div class="name">{{ fav.providers.name|json  }}</div>
         </div>
     </div>
+</div> -->
+<div class="container">
+    <table class="wishlist">
+        <thead class="wishlist__head">
+            <tr class="wishlist__row">
+                <th class="wishlist__column wishlist__column--image">
+                    Image
+                </th>
+                <th class="wishlist__column wishlist__column--product">
+                   provider
+                </th>
+                <th class="wishlist__column wishlist__column--product">
+                    phone
+                 </th>
+                <th class="wishlist__column wishlist__column--product">
+                   statas
+                </th>
+                <th class="wishlist__column wishlist__column--tocart"></th>
+                <th class="wishlist__column wishlist__column--remove"></th>
+            </tr>
+        </thead>
+        <tbody class="wishlist__body">
+            <tr
+                *ngFor="let fav of  featuredfavorites"
+                class="wishlist__row"
+            >
+                <td class="wishlist__column wishlist__column--image">
+                    <div class="product-image">
+
+                            <img
+                                class="product-image__img"
+                                src="{{fav.providers.image}}"
+                                alt=""
+                                style="width: 90px; height:70px; margin-top: -35px;"
+                            />
+
+                    </div>
+                </td>
+
+
+
+                <td class="wishlist__column wishlist__column--product">
+                    <a
+                        class="wishlist__product-name"
+                        >{{ fav.providers.name }}</a
+                    >
+                    <div class="wishlist__product-rating">
+                        <app-rating [value]="fav.providers.rating"></app-rating>
+                        <div class="wishlist__product-rating-legend">
+                            {{ fav.providers.reviews }} Reviews
+                        </div>
+                    </div>
+                </td>
+                <td class="wishlist__column wishlist__column--product">
+                    <a
+                        class="wishlist__product-name"
+                        >{{ fav.providers.mobile }}</a
+                    >
+                    <div class="wishlist__product-rating">
+                        <div class="wishlist__product-rating-legend">
+                           Name: {{ fav.providers.name }}
+                        </div>
+                    </div>
+                </td>
+
+                <td class="wishlist__column wishlist__column--stock">
+                    <div class="badge badge-success">Available</div>
+                </td>
+
+                <td class="wishlist__column wishlist__column--tocart">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-sm"
+                        (click)="addToBook(fav.providers)"
+                        [ngClass]="{
+                            'btn-loading':
+                                addedToCartProducts.includes(fav.providers)
+                        }"
+                    >
+                        Book
+                    </button>
+                </td>
+                <td class="wishlist__column wishlist__column--remove">
+                    <button
+                        type="button"
+                        class="btn btn-light btn-sm btn-svg-icon"
+                        (click)="removed(fav.providers.id)"
+                        [ngClass]="{
+                            'btn-loading': removedProducts.includes(fav.providers)
+                        }"
+                    >
+                        <app-icon name="cross-12" size="12"></app-icon>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
-<div class="block" *ngIf="(wishlist.items$ | async)?.length">
-    <div class="container">
-        <table class="wishlist">
-            <thead class="wishlist__head">
-                <tr class="wishlist__row">
-                    <th class="wishlist__column wishlist__column--image">
-                        Image
-                    </th>
-                    <th class="wishlist__column wishlist__column--product">
-                       provider
-                    </th>
-                    <th class="wishlist__column wishlist__column--stock">
-                        Status
-                    </th>
-                    <th class="wishlist__column wishlist__column--price">
-                        Price
-                    </th>
-                    <th class="wishlist__column wishlist__column--tocart"></th>
-                    <th class="wishlist__column wishlist__column--remove"></th>
-                </tr>
-            </thead>
-            <tbody class="wishlist__body">
-                <tr
-                    *ngFor="let product of wishlist.items$ | async"
-                    class="wishlist__row"
-                >
-                    <td class="wishlist__column wishlist__column--image">
-                        <div class="product-image">
-                            <a
-                                *ngIf="product.images?.length"
-                                [routerLink]="root.product(product)"
-                                class="product-image__body"
-                            >
-                                <img
-                                    class="product-image__img"
-                                    [src]="product.images[0]"
-                                    alt=""
-                                />
-                            </a>
-                        </div>
-                    </td>
-                    <td class="wishlist__column wishlist__column--product">
-                        <a
-                            [routerLink]="root.product(product)"
-                            class="wishlist__product-name"
-                            >{{ product.name }}</a
-                        >
-                        <div class="wishlist__product-rating">
-                            <app-rating [value]="product.rating"></app-rating>
-                            <div class="wishlist__product-rating-legend">
-                                {{ product.reviews }} Reviews
-                            </div>
-                        </div>
-                    </td>
-                    <td class="wishlist__column wishlist__column--stock">
-                        <div class="badge badge-success">Available</div>
-                    </td>
-                    <td class="wishlist__column wishlist__column--price">
-                        {{ product.price | currency: "EGP" }}
-                    </td>
-                    <td class="wishlist__column wishlist__column--tocart">
-                        <button
-                            type="button"
-                            class="btn btn-primary btn-sm"
-                            (click)="addToBook(product)"
-                            [ngClass]="{
-                                'btn-loading':
-                                    addedToCartProducts.includes(product)
-                            }"
-                        >
-                            Book
-                        </button>
-                    </td>
-                    <td class="wishlist__column wishlist__column--remove">
-                        <button
-                            type="button"
-                            class="btn btn-light btn-sm btn-svg-icon"
-                            (click)="remove(product)"
-                            [ngClass]="{
-                                'btn-loading': removedProducts.includes(product)
-                            }"
-                        >
-                            <app-icon name="cross-12" size="12"></app-icon>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+
+
+
