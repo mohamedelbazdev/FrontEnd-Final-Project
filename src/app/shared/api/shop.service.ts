@@ -64,7 +64,7 @@ export class ShopService {
      * @param parent - If a parent is specified then its descendants will be returned.
      * @param depth  - Maximum depth of category tree.
      */
-    getCategories(parent: Partial<Category>|null = null, depth: number = 0): Observable<Category[]> {
+    getCategories(parent: Partial<Category> | null = null, depth: number = 0): Observable<Category[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -123,7 +123,7 @@ export class ShopService {
      * @param options.sort         - The algorithm by which the list should be sorted (optional).
      * @param options.filterValues - An object whose keys are filter slugs and values ​​are filter values (optional).
      */
-    getProductsList(categorySlug: string|null, options: ListOptions): Observable<ProductsList> {
+    getProductsList(categorySlug: string | null, options: ListOptions): Observable<ProductsList> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -190,7 +190,7 @@ export class ShopService {
         return getBrands();
     }
 
-    getBestsellers(limit: number|null = null): Observable<Product[]> {
+    getBestsellers(limit: number | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -211,7 +211,7 @@ export class ShopService {
         return getBestsellers(limit);
     }
 
-    getTopRated(limit: number|null = null): Observable<Product[]> {
+    getTopRated(limit: number | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -232,7 +232,7 @@ export class ShopService {
         return getTopRated(limit);
     }
 
-    getSpecialOffers(limit: number|null = null): Observable<Product[]> {
+    getSpecialOffers(limit: number | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -253,7 +253,7 @@ export class ShopService {
         return getSpecialOffers(limit);
     }
 
-    getfeaturedProvider(categorySlug: string|null = null, limit: number|null = null): Observable<Product[]> {
+    getfeaturedProvider(categorySlug: string | null = null, limit: number | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -278,7 +278,7 @@ export class ShopService {
         return getFeatured(categorySlug, limit);
     }
 
-    getLatestProducts(categorySlug: string|null = null, limit: number|null = null): Observable<Product[]> {
+    getLatestProducts(categorySlug: string | null = null, limit: number | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
@@ -322,7 +322,7 @@ export class ShopService {
         return getRelatedProducts(product);
     }
 
-    getSuggestions(query: string, limit: number, categorySlug: string|null = null): Observable<Product[]> {
+    getSuggestions(query: string, limit: number, categorySlug: string | null = null): Observable<Product[]> {
         /**
          * This is what your API endpoint might look like:
          *
