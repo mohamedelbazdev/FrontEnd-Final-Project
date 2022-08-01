@@ -8,6 +8,8 @@ import { RootService } from '../../services/root.service';
 import { CurrencyService } from '../../services/currency.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { Router } from '@angular/router';
+
 
 @Component({
     selector: 'app-provider-card',
@@ -28,6 +30,7 @@ export class ProductCardComponent implements OnInit, OnDestroy, OnChanges {
     featuredAttributes: ProductAttribute[] = [];
 
     constructor(
+        private _Router:Router,
         private cd: ChangeDetectorRef,
         public root: RootService,
         public cart: CartService,
@@ -55,17 +58,25 @@ export class ProductCardComponent implements OnInit, OnDestroy, OnChanges {
     }
 
     addToBook(): void {
-        if (this.addingToBook) {
-            return;
-        }
 
-        this.addingToBook = true;
-        this.cart.add(this.product, 1).subscribe({
-            complete: () => {
-                this.addingToBook = false;
-                this.cd.markForCheck();
-            }
-        });
+        alert('a')
+
+       this._Router.navigateByUrl('/shop/products')
+
+
+
+
+        // if (this.addingToBook) {
+        //     return;
+        // }
+
+        // this.addingToBook = true;
+        // this.cart.add(this.product, 1).subscribe({
+        //     complete: () => {
+        //         this.addingToBook = false;
+        //         this.cd.markForCheck();
+        //     }
+        // });
     }
 
     addToWishlist(): void {

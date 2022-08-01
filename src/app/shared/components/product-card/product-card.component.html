@@ -62,9 +62,10 @@
             }}</a>
         </div>
         <div class="product-card__rating">
-            <app-rating [value]="product.rating"></app-rating>
+            <app-rating [value]="product.providers[0]?.rate"></app-rating>
             <div class="product-card__rating-legend">
-                {{ product.reviews }} Reviews
+                {{ product.providers?.rate}} Reviews
+
             </div>
         </div>
         <ul
@@ -113,7 +114,7 @@
                 (click)="addToBook()"
                 [ngClass]="{ 'btn-loading': addingToBook }"
             >
-                Book
+                Details
             </button>
             <button
                 class="btn btn-secondary product-card__addToBook product-card__addToBook--list"

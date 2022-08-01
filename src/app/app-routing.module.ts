@@ -6,6 +6,7 @@ import { RootComponent } from './components/root/root.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { AuthGuard } from './modules/account/guards/auth.guard';
 import {GuestGuard} from "./modules/account/guards/guest.guard";
+import { ProviderDetalisComponent } from './pages/provider-detalis/provider-detalis.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,11 @@ const routes: Routes = [
                 path: 'chat',
                 pathMatch: 'full',
                 component: ChatComponent, canActivate:[AuthGuard]
+            },
+            {
+                path: 'Provider-details',
+                pathMatch: 'full',
+                component: ProviderDetalisComponent ,
             },
             {
                 path: 'shop',

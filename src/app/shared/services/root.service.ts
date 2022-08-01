@@ -47,6 +47,8 @@ export class RootService {
             return `${basePath}/${product.id}`;
         }
 
+        return '/'
+
         throw Error('Provide product with "slug" or "id".');
     }
 
