@@ -34,22 +34,22 @@ export class ChatComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.chat.getChatRooms().subscribe(res => {
-      this.chatRooms = res.data
-      console.log(res.data)
-    })
-    this.chat.getChatSpecificRoom().subscribe(res => {
-      this.chatUserRooms = res.data
-      console.log(res.data)
-    })
-    this.chat.getChatSpecificRoom().subscribe(res => {
-      this.SpecificRooms = res.data
-      console.log(res.data)
-    })
-    this.chat.getChatMakeRead().subscribe(res => {
-      this.chatMakeRead = res.data
-      console.log(res.data)
-    })
+    // this.chat.getChatRooms().subscribe(res => {
+    //   this.chatRooms = res.data
+    //   console.log(res.data)
+    // })
+    // this.chat.getChatSpecificRoom().subscribe(res => {
+    //   this.chatUserRooms = res.data
+    //   console.log(res.data)
+    // })
+    // this.chat.getChatSpecificRoom().subscribe(res => {
+    //   this.SpecificRooms = res.data
+    //   console.log(res.data)
+    // })
+    // this.chat.getChatMakeRead().subscribe(res => {
+    //   this.chatMakeRead = res.data
+    //   console.log(res.data)
+    // })
 
   }
 }
