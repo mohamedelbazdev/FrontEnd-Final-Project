@@ -44,7 +44,7 @@ export class PageWishlistComponent implements OnInit  {
         });
     }
 
-    remove(product: Product): void {
+    // remove(product: Product): void {
 
         // if (this.removedProducts.includes(product)) {
         //     return;
@@ -58,13 +58,13 @@ export class PageWishlistComponent implements OnInit  {
         // });
 
 
-    }
+    // }
 
     removed(id: any){
         this.fav.removefav(id).subscribe( res=>{
             let index = this.featuredfavorites.findIndex(cat => cat.id === id)
             this.featuredfavorites.splice(index,1)
-            
+
         })
 
 
