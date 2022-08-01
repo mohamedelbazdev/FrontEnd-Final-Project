@@ -7,7 +7,7 @@ import { Product } from '../../shared/interfaces/product';
 // import { Category } from '../../shared/interfaces/category';
 import { BlockHeaderGroup } from '../../shared/interfaces/block-header-group';
 import { takeUntil, tap } from 'rxjs/operators';
-import {HomeService} from "../../shared/api/home.service";
+import { HomeService } from "../../shared/api/home.service";
 
 interface ProductsCarouselGroup extends BlockHeaderGroup {
     products$: Observable<Product[]>;

@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { PusherService } from './services/pusher.service';
+
 
 // modules (third-party)
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -125,6 +125,6 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
         CurrencyFormatPipe,
         ShareButtonsComponent,
     ],
-    providers: [PusherService]
+    providers: []
 })
 export class SharedModule { }

@@ -4,18 +4,12 @@
             <div id="sidebar">
                 <div id="row1">
                     <div id="searchBox">
-                        <input
-                            type="text"
-                            placeholder="Search or start the new chat"
-                        />
+                        <input type="text" placeholder="Search or start the new chat" />
                     </div>
                 </div>
 
                 <div id="sidebarContent">
-                    <div
-                        class="conversation"
-                        *ngFor="let conversation of conversations"
-                    >
+                    <div class="conversation" *ngFor="let conversation of conversations">
                         <div class="content">
                             <div class="conversationHeader">
                                 <div class="name">{{ conversation.name }}</div>
@@ -31,28 +25,13 @@
         </div>
         <div class="col-md-8">
             <div class="container my-5 border my-3">
-                <div
-                    class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white"
-                >
-                    <div
-                        class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"
-                    >
-                        <input
-                            class="fs-5 fw-semibold"
-                            type="text"
-                            [(ngModel)]="username"
-                        />
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+                    <div class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                        <input class="fs-5 fw-semibold" type="text" [(ngModel)]="username" />
                     </div>
-                    <div
-                        class="list-group list-group-flush border-bottom scrollarea"
-                    >
-                        <div
-                            class="list-group-item list-group-item-action py-3 lh-tight"
-                            *ngFor="let msg of messages"
-                        >
-                            <div
-                                class="d-flex w-100 align-items-center justify-content-between"
-                            >
+                    <div class="list-group list-group-flush border-bottom scrollarea">
+                        <div class="list-group-item list-group-item-action py-3 lh-tight" *ngFor="let msg of messages">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
                                 <strong class="mb-1">{{msg.username}</strong>
                             </div>
                             <div class="col-10 mb-1 small">{{msg.message}</div>
@@ -60,15 +39,20 @@
                     </div>
                 </div>
                 <form class="mb-3 d-flex">
-                    <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Write a message"
-                        [value]="message"
-                    />
+                    <input class="form-control" type="text" placeholder="Write a message" [value]="message" />
                     <button class="btn btn-info">send</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- <div id="sidebarContent">
+    <div class="conversation" *ngFor="let chatRoom of chatRooms">
+        <div class="content">
+            <div class="conversationHeader">
+                {{chatRoom}}
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -32,8 +32,8 @@ import { PageHomeOneComponent } from './pages/page-home-one/page-home-one.compon
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { ChatComponent } from './pages/chat/chat.component';
 
-import {HTTP_INTERCEPTORS} from "@angular/common/http";
-import {HeaderInterceptor} from "./modules/account/header.interceptor";
+import { HTTP_INTERCEPTORS } from "@angular/common/http";
+import { HeaderInterceptor } from "./modules/account/header.interceptor";
 
 
 
